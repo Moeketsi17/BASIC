@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -42,7 +43,7 @@ body {
         align-items: flex-end;
         justify-content: space-between;
         cursor: pointer;
-        transition: 0.5s ease;
+        transition: 0.3s ease;
 
     }
 
@@ -101,12 +102,19 @@ body {
         display: flex;
         flex-direction: column;
         z-index: 10;
-        position: absolute;
+        position: relative;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 90vh;
         top: 10vh;
+    }
+
+    .cursor-container {
+        /* transform: translate(-50%, -50%); */
+        transition: all 0.3s ease;
+        transform-origin: 100% 100%;
+        
     }
 
     .header-cursor {
@@ -117,11 +125,71 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
 
     .cursor-container p {
         text-align: center;
     }
+
+
+    /* about */
+    .about{
+        display: flex;
+        padding: 10rem 5%;
+        background-color: #f4f4f4;
+    }
+
+    .about-text-container {
+        width: 50%;
+
+    }
+
+    .about-text {
+        font-size: 38px;
+        line-height: 42px;
+        font-weight: 500;
+        color: #252422;
+    }
+
+    .about-text span {
+        font-size: 40px;
+    }
+
+    .cta-btn {
+        margin-top: 3rem;
+        border: 1px solid #252422;
+        height: 30px;
+        width: 170px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .about-logo {
+        padding: 0;
+        height: 60vh;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .about-logo p {
+        color: #252422;
+        font-size: 180px;
+        font-weight: 700;
+    }
+
+    .about-logo span {
+        color: #252422;
+        font-size: 330px;
+        font-weight: 300;
+        position: relative;
+        bottom: 4rem;
+    }
+
+
+
 
 
 
