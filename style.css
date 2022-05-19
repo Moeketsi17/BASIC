@@ -442,28 +442,101 @@ body, html {
         padding: 1rem 0 0 0;
         display: flex;
         justify-content: space-between;
-        background-color: rgb(197, 178, 4);
-        height: 250px;
+        height: 280px;
+        cursor: pointer;
+        margin-bottom: 5rem;
+    }
+
+    .feature-container:hover  .feature-img {
+        transform: scale(1);
+    }
+
+    .feature-container:hover  .feature-heading {
+        text-decoration: underline;
+        transition: text-decoration 1s ease ;
     }
 
     .feature-img-container {
-        min-width: 350px;
+        min-width: 380px;
         height: 100%;
-        background-color: palevioletred;
+        overflow: hidden;
     }
 
     .feature-img {
         width: 100%;
         height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform 0.5s ease;
+        transform: scale(1.09);
+    }
 
+    .feature-img1 {
+        background-image: url(/assets/feature-img1.png);
+    }
+
+    .feature-img2 {
+        background-image: url(/assets/feature-img2.jpg);
+    }
+
+    .feature-img3 {
+        background-image: url(/assets/feature-img3.png);
+    }
+
+    .feature-img4 {
+        background-image: url(/assets/feature-img4.png);
+    }
+
+    .feature-img5 {
+        background-image: url(/assets/feature-img5.jpg);
+    }
+
+    .feature-img6 {
+        background-image: url(/assets/feature-img6.png);
+    }
+
+    .feature-img7 {
+        background-image: url(/assets/feature-img7.jpg);
+    }
+
+    .feature-about-text {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 62%;
+    }
+
+    .feature-heading {
+        font-size: 40px;
+        line-height: 42.2px;
+        width: 60%;
+        font-weight: 500;
+        transition: text-decoration 1s ease ;
+    }
+
+    .feature-about-text p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .feature-about-text p span {
+        font-weight: 400;
     }
 
     figure {
-        background-color: lightgreen;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         position: relative;
     }
+
+    figure svg {
+        color: #252422;
+    }
+
+    
+
 
 
 
