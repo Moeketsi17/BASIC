@@ -268,7 +268,7 @@ body {
 
     /* featured engagements */
     .featured {
-        padding: 2rem 5%;
+        padding: 2rem 5% 7rem;
         background-color: #f4f4f4;
         position: relative;
     }
@@ -307,24 +307,53 @@ body {
     .featured-company-container {
         display: flex;
         overflow-x: auto;
-        gap: 1rem;
+        gap: 2rem;
         position: relative;
     }
 
     .featured-company-container::-webkit-scrollbar {
+        height: 3px;
+        background-color: #c5c5c5;
+    }
+
+    .featured-company-container::-webkit-scrollbar-thumb {
+        background-color: #252422;
+    }
+
+    .company-logo {
+        height: 11rem;
+    }
+
+    .company-logo img {
+        line-height: 4rem;
+    }
+
+    .line {
+        margin-top: 1rem;
         height: 2px;
+        width: 30px;
         background-color: #252422;
     }
 
     .company-card {
-        background-color: violet;
-        height: 400px;
-        min-width: 300px;
+        height: 500px;
+        min-width: 400px;
         position: relative;
+        color: #252422;
+        padding: 1rem 2rem 0 0;
     }
 
-    .company-logo img {
-        width: 150px;
+    .google-logo {
+        width: 130px;
+    }
+
+    .pantagonia-logo {
+        width: 220px;
+    }
+
+    .company-text,
+    .company-text a {
+        color: #252422;
     }
 
 
