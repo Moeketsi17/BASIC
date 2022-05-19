@@ -134,18 +134,18 @@ body {
 
 
     /* about */
-    .about{
+    .about-work {
         display: flex;
         padding: 10rem 5%;
         background-color: #f4f4f4;
     }
 
-    .about-text-container {
+    .about-work-text-container {
         width: 50%;
 
     }
 
-    .about-text {
+    .about-work-text {
         font-size: 38px;
         line-height: 42px;
         font-weight: 500;
@@ -157,15 +157,16 @@ body {
     }
 
     .cta-btn {
-        margin-top: 3rem;
+        margin-top: 2rem;
         border: 1px solid #252422;
         height: 30px;
         width: 170px;
         border-radius: 15px;
         cursor: pointer;
+        background: transparent;
     }
 
-    .about-logo {
+    .about-work-logo {
         padding: 0;
         height: 60vh;
         width: 50%;
@@ -174,13 +175,13 @@ body {
         align-items: flex-start;
     }
 
-    .about-logo p {
+    .about-work-logo p {
         color: #252422;
         font-size: 180px;
         font-weight: 700;
     }
 
-    .about-logo span {
+    .about-work-logo span {
         color: #252422;
         font-size: 330px;
         font-weight: 300;
@@ -357,6 +358,44 @@ body {
     }
 
 
+    /* about section */
+    .about-section {
+        display: flex;
+        padding: 3rem 5%;
+        background-color: #f4f4f4;
+    }
+
+    .about-text-container {
+        width: 50%;
+        position: relative;
+    }
+
+    .about-text-heading {
+        font-size: 85px;
+        line-height: 77px;
+        color: #252422;
+    }
+
+    .about-text-container p {
+        padding: 2rem 0;
+        font-weight: 600;
+        color: #252422;
+        font-size: 18px;
+    }
+
+    .about-text-container p span {
+        font-weight: 700;
+    }
+
+    .video-container {
+        width: 50%;
+        position: relative;
+    }
+
+    .video-container video {
+        width: 100%;
+        object-fit: cover;
+    }
 
 
 
