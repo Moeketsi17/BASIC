@@ -197,7 +197,7 @@ body {
         padding: 0 5% 3rem;
         gap: 1rem;
         background-color: #f4f4f4;
-        border-bottom: 1px solid #252422;
+        
     }
 
     .work-card {
@@ -262,6 +262,74 @@ body {
         line-height: 18px;
         font-size: 14px;
     }
+
+
+
+
+    /* featured engagements */
+    .featured {
+        padding: 2rem 5%;
+        background-color: #f4f4f4;
+        position: relative;
+    }
+
+    .gibberish {
+        border-top: 1px solid #252422;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gibberish p {
+        color: #252422;
+        font-size: 14px;
+    }
+
+    .gibberish p:nth-child(2) {
+        width: 40%;
+    }
+
+    .gibberish span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #252422;
+    }
+
+    .featured-heading {
+        padding: 8rem 0;
+        font-size: 2.6rem;
+        width: 300px;
+        color: #252422;
+        line-height: 2.8rem;
+    }
+
+    .featured-company-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .featured-company-container::-webkit-scrollbar {
+        height: 2px;
+        background-color: #252422;
+    }
+
+    .company-card {
+        background-color: violet;
+        height: 400px;
+        min-width: 300px;
+        position: relative;
+    }
+
+    .company-logo img {
+        width: 150px;
+    }
+
+
+
+
 
 
 
