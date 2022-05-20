@@ -98,8 +98,90 @@ body, html {
     }
 
 
+    /* collections section */
+    .collecctions {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #252422;
+        z-index: 10000;
+    }
+
+    .collections-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 5%;
+        align-items: center;
+    }
+
+    .collections-circle {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #f9cdcd;
+    }
+
+    .collections-heading {
+        display: flex;
+        width: 85%;
+    }
+
+    .collections-heading p {
+        font-size: 14px;
+        font-weight: 500px;
+        color: #f9cdcd;
+        
+    }
+
+    .collections-heading p:nth-child(1) {
+        width: 190px;
+        margin-right: 3rem;
+    }
+
+    .collections-heading p:nth-child(2) {
+        width: 480px;
+    }
+
+    .burger-close {
+        height: 45px;
+        width: 45px;
+        border: 2px solid #f9cdcd;
+        border-radius: 50%;
+        
+    }
+
+    .burger-close-line {
+        height: 1.5px;
+        width: 30px;
+        background-color: #f9cdcd;
+    }
+
+    .burger-close-line1 {
+        transform: rotate(45deg) translateX(17px) translateY(9px);
+        transition: all 0.4s ease;
+    }
+
+    .burger-close-line2 {
+        transform: rotate(-45deg) translateX(-8px) translateY(14px);
+        transition: all 0.4s ease;
+    }
+
+    .collections-footer {
+        padding: 1rem 5% 1rem;
+    }
+
+    
 
 
+
+
+
+    /* header section */
     header {
         z-index: 1;
         height: 100vh;
