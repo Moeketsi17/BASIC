@@ -17,7 +17,7 @@ function cursor(e){
 
 
 // work mouse grab scroll
-const slider = document.querySelector('.featured-company-container');
+const slider = document.querySelector('.featured-company-container , .initiatives-container' );
 let isDown = false;
 let startX;
 let scrollLeft;
