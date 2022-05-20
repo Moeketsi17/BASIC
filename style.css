@@ -14,6 +14,24 @@ body, html {
 
 @media screen and (min-width: 1024px) {
 
+    /* scroll bar change */
+    ::-webkit-scrollbar {
+        width: 10px;
+        background: rgba(218, 218, 218, 0.295);
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar:hover {
+        display: block;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #252422;
+        border-radius: 3px;
+    }
+
+
+
     .nav-bar {
         display: flex;
         align-items: center;
@@ -336,6 +354,7 @@ body, html {
         overflow-x: auto;
         gap: 2rem;
         position: relative;
+        height: 580px;
     }
 
     .featured-company-container::-webkit-scrollbar {
@@ -362,12 +381,18 @@ body, html {
         background-color: #252422;
     }
 
+    .company-name {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
     .company-card {
         height: 500px;
         min-width: 400px;
         position: relative;
         color: #252422;
-        padding: 1rem 2rem 0 0;
+        padding: 1rem 5% 0 0;
     }
 
     .google-logo {
@@ -380,6 +405,8 @@ body, html {
 
     .company-text,
     .company-text a {
+        font-weight: 500;
+        font-size: 18px;
         color: #252422;
     }
 
