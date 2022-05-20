@@ -171,6 +171,87 @@ body, html {
         transition: all 0.4s ease;
     }
 
+    .collections-item-container {
+        padding-left: 5%;
+    }
+
+    .collection-item {
+        width: 380px;
+        height: 420px;
+        border-left: 1px solid #f9cdcd;
+        padding: 0 10px;
+    }
+
+    .collection-item-img {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item-img1 {
+        background-image: url(/assets/Initatives1.png);
+    }
+
+
+    .collection-text-container {
+        padding: 15px 10px 0;
+    }
+
+    .collection-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collection-heading p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #f9cdcd;
+    }
+
+    
+
+    .collection-text p {
+        font-size: 12px;
+        color: #f9cdcd;
+        font-weight: 500;
+    }
+
+    .collection-text p:nth-child(1) {
+        line-height: 25px;
+    }
+
+    .collection-item:hover .collection-item-img {
+        height: 150px;
+        width: 100%;
+        transition: all 0.3s ease-in;
+    }
+
+    .collection-item:hover .collection-text p:nth-child(2),
+    .collection-item:hover .collection-text a {
+        display: block;
+        
+    }
+
+
+    .collection-text p:nth-child(2),
+    .collection-text a {
+        display: none;
+    }
+
+    .collection-text p:nth-child(2) {
+        line-height: 17px;
+    }
+
+    .collection-text a {
+        color: #f9cdcd;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+
     .collections-footer {
         padding: 1rem 5% 1rem;
     }
