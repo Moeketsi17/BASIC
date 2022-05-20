@@ -565,6 +565,98 @@ body, html {
     
 
 
+    /* footer section */
+    .footer {
+        width: 100%;
+        height: 100vh;
+        padding: 5rem 5% 0;
+        background-color: #252422;
+    }
+
+    .footer-about {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    .footer-logo {
+        color: #f4f4f4;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .footer-about-text {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .footer-about-text,
+    .footer-about-text a {
+        font-size: 32px;
+        line-height: 33px;
+        font-weight: 600;
+        color: #f4f4f4;
+    }
+
+
+    .footer-links-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
+    }
+
+    .footer-email {
+        width: 40%;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+        line-height: 19px;
+        color: #f4f4f4;
+        font-weight: 500;
+    }
+
+    .email-section {
+        display: flex;
+        height: 2.5rem;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+    .email-section input {
+        background: transparent;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: #f4f4f4;
+    }
+
+    .email-section input::placeholder {
+        color: #f4f4f4;
+    }
+
+    .email-section button {
+        background: none;
+        border: none;
+
+    }
+
+    .email-section button svg {
+        width: 20px;
+        height: 17px;
+        color: #f4f4f4;
+    }
+
+
+
+
+
+
+
+
+
 
 
 }
