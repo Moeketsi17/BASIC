@@ -156,18 +156,18 @@ body, html {
     }
 
     .burger-close-line {
-        height: 1.5px;
-        width: 30px;
+        height: 2.3px;
+        width: 25px;
         background-color: #f9cdcd;
     }
 
     .burger-close-line1 {
-        transform: rotate(45deg) translateX(17px) translateY(9px);
+        transform: rotate(45deg) translateX(19px) translateY(7px);
         transition: all 0.4s ease;
     }
 
     .burger-close-line2 {
-        transform: rotate(-45deg) translateX(-8px) translateY(14px);
+        transform: rotate(-45deg) translateX(-8px) translateY(10px);
         transition: all 0.4s ease;
     }
 
