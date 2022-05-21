@@ -7,11 +7,19 @@ function cursor(e){
     mouseCursor.style.left = e.pageX + "px";
 }
 
+ // smooth scroll 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#js-scroll'),
+    smooth: true,
+    smoothMobile: true,
+    inertia: 0.75
+});
+
 
 // sticky nav
 window.addEventListener('scroll', function(){
     let nav = document.querySelector('.nav-bar');
-    nav.classList.toggle('sticky', window.scrollY > 480)
+    nav.classList.toggle('sticky', window.scrollY > 580)
 });
 
 
