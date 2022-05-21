@@ -7,6 +7,19 @@ function cursor(e){
     mouseCursor.style.left = e.pageX + "px";
 }
 
+// toggle collecctions menu ...
+let burger = document.querySelector(".burger");
+let collections = document.querySelector(".collecctions");
+let burgerClose = document.querySelector(".burger-close");
+
+burger.addEventListener("click", () => {
+    collections.classList.toggle("active");
+    
+})
+
+burgerClose.addEventListener("click", () => {
+    collections.classList.toggle("close");
+})
 
 
 

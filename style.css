@@ -109,9 +109,21 @@ body, html {
         top: 0;
         left: 0;
         background-color: #252422;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .collecctions.active {
+        opacity: 1;
         z-index: 1000;
+    }
+
+    .collecctions.close {
+        z-index: 1;
         opacity: 0;
     }
+
 
     .collections-header {
         display: flex;
@@ -153,7 +165,7 @@ body, html {
         width: 45px;
         border: 2px solid #f9cdcd;
         border-radius: 50%;
-        
+        cursor: pointer;
     }
 
     .burger-close-line {
