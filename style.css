@@ -109,7 +109,8 @@ body, html {
         top: 0;
         left: 0;
         background-color: #252422;
-        z-index: 10000;
+        z-index: 1000;
+        opacity: 0;
     }
 
     .collections-header {
@@ -156,9 +157,10 @@ body, html {
     }
 
     .burger-close-line {
-        height: 2.3px;
+        height: 2.45px;
         width: 25px;
         background-color: #f9cdcd;
+
     }
 
     .burger-close-line1 {
@@ -167,7 +169,7 @@ body, html {
     }
 
     .burger-close-line2 {
-        transform: rotate(-45deg) translateX(-8px) translateY(10px);
+        transform: rotate(-45deg) translateX(-6px) translateY(17px);
         transition: all 0.4s ease;
     }
 
@@ -271,8 +273,6 @@ body, html {
         overflow: hidden;
     }
 
-    
-    }
 
     .collection-text p:nth-child(2),
     .collection-text a {
@@ -894,13 +894,13 @@ body, html {
 
 
 
-
-
-
-
-
-
 }
+
+
+
+
+
+
 
 
 
