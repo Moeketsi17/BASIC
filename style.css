@@ -46,6 +46,12 @@ body, html {
         z-index: 1000;
     }
 
+    .nav-bar.sticky {
+        padding: 20px 5%;
+        color: #252422;
+        background-color: #c5c5c5;
+    }
+
     .logo {
         font-size: 34px;
         color: #fff;

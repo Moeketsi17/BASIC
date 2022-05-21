@@ -7,6 +7,15 @@ function cursor(e){
     mouseCursor.style.left = e.pageX + "px";
 }
 
+
+// sticky nav
+window.addEventListener('scroll', function(){
+    let nav = document.querySelector('.nav-bar');
+    nav.classList.toggle('sticky', window.scrollY > 1920)
+});
+
+
+
 // toggle collecctions menu ...
 let burger = document.querySelector(".burger");
 let collections = document.querySelector(".collecctions");
