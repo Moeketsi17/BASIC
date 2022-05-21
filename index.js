@@ -11,7 +11,7 @@ function cursor(e){
 // sticky nav
 window.addEventListener('scroll', function(){
     let nav = document.querySelector('.nav-bar');
-    nav.classList.toggle('sticky', window.scrollY > 1920)
+    nav.classList.toggle('sticky', window.scrollY > 480)
 });
 
 
