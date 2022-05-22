@@ -36,7 +36,7 @@ burger.addEventListener("click", () => {
     let tl1 = gsap.timeline()
 
     tl1.from('.collections-item-container',
-    {x:900, duration: 1,},  "-=0.3"
+        {x:1200, duration: 1,}
     );
 })
 
