@@ -31,12 +31,19 @@ let burgerClose = document.querySelector(".burger-close");
 
 burger.addEventListener("click", () => {
     collections.classList.toggle("active");
-    
+
+    // header animation
+    let tl1 = gsap.timeline()
+
+    tl1.from('.collections-item-container',
+    {x:900, duration: 1,}
+    );
 })
 
 burgerClose.addEventListener("click", () => {
     collections.classList.toggle("close");
 })
+
 
 
 
