@@ -77,10 +77,15 @@ body, html {
         justify-content: space-between;
         cursor: pointer;
         transition: 0.3s ease;
+        position: relative;
     }
 
     .burger:hover {
-        width: 26px;
+        width: 29px;
+    }
+
+    .burger:hover .burger span:nth-child(2) {
+        margin: 0 3px;
     }
 
     .burger span {

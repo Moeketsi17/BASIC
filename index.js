@@ -54,7 +54,7 @@ burgerClose.addEventListener("click", () => {
 
 
 // work mouse grab scroll
-const slider = document.querySelector('.featured-company-container , .initiatives-container' );
+const slider = document.querySelector['.featured-company-container', '.initiatives-container, '];
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -84,6 +84,8 @@ slider.addEventListener('mousemove', (e) => {
     slider.scrollLeft = scrollLeft - walk;
     console.log(walk);
 });
+
+
 
 
 
