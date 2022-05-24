@@ -5,7 +5,7 @@ const scroll = new LocomotiveScroll({
     smooth: true,
     tablet: { smooth: true },
     smartphone: { smooth: true },
-    
+
 })
 
 
@@ -25,9 +25,17 @@ function cursor(e){
 
 
 // sticky nav
-window.addEventListener('scroll', function(){
-    let nav = document.querySelector('.nav-bar');
-    nav.classList.toggle('sticky', window.scrollY > 580)
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset
+
+    if (currentScroll < 0) {
+        body.classList.add("sticky");
+    }
+
+    lastScroll =currentScroll
 });
 
 
