@@ -1,9 +1,13 @@
-// lococmotive scroll
-const scroll = new locomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true
 
+// lococmotive scroll
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    tablet: { smooth: true },
+    smartphone: { smooth: true },
+    
 })
+
 
 
 
@@ -17,18 +21,6 @@ function cursor(e){
     mouseCursor.style.top = e.pageY + "px";
     mouseCursor.style.left = e.pageX + "px";
 }
-
- // smooth scroll 
-let body = document.querySelector("body");
-
-gsap(body, {
-    scollTrigger: {
-        trigger: body,
-        scrub: 1,
-        start: "top top",
-        end: "bottom bottom"
-    }
-})
 
 
 
