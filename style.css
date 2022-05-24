@@ -903,6 +903,10 @@ body, html {
         cursor: pointer;
     }
 
+    .footer-links span:hover {
+        text-decoration: underline;
+    }
+
     .footer-copyright {
         display: flex;
         justify-content: space-between;

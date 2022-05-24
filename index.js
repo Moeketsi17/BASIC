@@ -7,13 +7,18 @@ function cursor(e){
     mouseCursor.style.left = e.pageX + "px";
 }
 
-//  // smooth scroll 
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('#js-scroll'),
-//     smooth: true,
-//     smoothMobile: true,
-//     inertia: 0.75
-// });
+ // smooth scroll 
+let body = document.querySelector("body");
+
+gsap(body, {
+    scollTrigger: {
+        trigger: body,
+        scrub: 1,
+        start: "top top",
+        end: "bottom bottom"
+    }
+})
+
 
 
 // sticky nav
