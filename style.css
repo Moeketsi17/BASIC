@@ -415,7 +415,7 @@ body, html {
         width: 170px;
         border-radius: 15px;
         cursor: pointer;
-        background-color: none;
+        background-color: #f4f4f4;
         outline: none;
         position: relative;
         overflow: hidden;
@@ -439,6 +439,10 @@ body, html {
     .cta-btn:hover::before  {
         color: #f4f4f4;
         height: 180%;
+    }
+
+    .cta-btn p {
+        color: #252422;
     }
 
     .cta-btn:hover .cta-btn p {
@@ -652,13 +656,16 @@ body, html {
     /* about section */
     .about-section {
         display: flex;
-        padding: 3rem 5%;
+        padding: 5rem 5% 0;
         background-color: #f4f4f4;
+        height: 150vh;
     }
 
     .about-text-container {
+        padding: 3rem 0 0;
         width: 50%;
         position: relative;
+        background-color: lightcoral;
     }
 
     .about-text-heading {
