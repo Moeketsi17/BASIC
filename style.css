@@ -16,7 +16,7 @@ body, html {
 @media screen and (min-width: 1024px) {
 
     /* scroll bar change */
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: 10px;
         background: rgba(218, 218, 218, 0.295);
         border-radius: 3px;
@@ -29,7 +29,7 @@ body, html {
     ::-webkit-scrollbar-thumb {
         background: #252422;
         border-radius: 3px;
-    }
+    } */
 
 
 

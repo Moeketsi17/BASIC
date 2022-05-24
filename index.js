@@ -1,3 +1,14 @@
+// lococmotive scroll
+const scroll = new locomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true
+
+})
+
+
+
+
+
 // header mouse
 let mouseCursor = document.querySelector(".header-cursor");
 

@@ -14,10 +14,12 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- locomotiv stylesheet -->
+    <link rel="stylesheet" href="/locomotive.css">
 
 </head>
 
-<body id="js-scroll">
+<body>
     <nav class="nav-bar">
         <h1 class="logo">BASIC/DEPT <span>&reg;</span></h1>
 
@@ -42,455 +44,475 @@
         <div class="menu-btn">MENU</div>
     </nav>
 
-    <!-- header -->
-    <header>
-        <video src="/assets/header-vid.mp4" muted loop autoplay></video>
-        <div class="header-cursor-container">
-            <div class="cursor-container">
-                <div class="header-cursor">PLAY REEL</div>
-                <p>BASIC/DEPT <br>2010 - 2022</p>
-            </div>
-        </div>
-    </header>
 
-    <!-- collections -->
-    <div class="collecctions">
-        <div class="collections-header">
-            <!-- collections header text -->
-            <div class="collections-circle"></div>
-            <h6 class="collections-heading">
-                <p>(6)INTERNAL WORKS <br> &#169 2022 c/o BASIC/DEOPT</p>
-                <p>A COLLECTION OF INTERNAL PROJECTS AND INITIATIVES UNDER THE <br> BASIC BRAND</p>
-            </h6>
-            <div class="burger-close">
-                <div class="burger-close-line burger-close-line1"></div>
-                <div class="burger-close-line burger-close-line2"></div>
-            </div>
-        </div>
+    <!-- locomotivescroll container -->
+    <div class="scroll-container" data-scroll-container>
 
-        <!-- collections item -->
-        <div class="collections-item-container">
-            <div class="initiatives-container">
-                <div class="collection-item">
-                    <div class="collection-item-img item-img1"></div>
-                    <div class="collection-text-container">
-                        <div class="collection-heading">
-                            <p>CULTURE MANUAL<span>&reg;</span></p>
-                            <p>&#169 2019</p>
-                        </div>
-                        <div class="collection-text">
-                            <p>CULTURE & ONBOARDING</p>
-                            <p>To help strangthen our culture and attrack world class talent, we created the Culture
-                                Manual - an online guide for new hires that differentiates the employee onboarding
-                                process and builds alignment for our collective.</p>
-                            <br>
-                            <a href="#">Visit the Site</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <div class="collection-item-img item-img2"></div>
-                    <div class="collection-text-container">
-                        <div class="collection-heading">
-                            <p>MOVES<span>&reg;</span></p>
-                            <p>&#169 2018</p>
-                        </div>
-                        <div class="collection-text">
-                            <p>OUR NEW HQ</p>
-                            <p>When we moved into our new HQ, we put together asite experience providng in-depth look
-                                into thetwo-year process imaging, designing and developing our new office we call home.
-                            </p>
-                            <br>
-                            <a href="#">Visit the Site</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <div class="collection-item-img item-img3"></div>
-                    <div class="collection-text-container">
-                        <div class="collection-heading">
-                            <p>CREAFTED</p>
-                            <p>&#169 2019</p>
-                        </div>
-                        <div class="collection-text">
-                            <p>CREATIVE COMMUNITY</p>
-                            <p>A communal initiative we operate to clelbrate diversity and creativy by bringing together
-                                people feom diffeernt backgrounds and interests.</p>
-                            <br>
-                            <a href="#">Visit the Site</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <div class="collection-item-img item-img4"></div>
-                    <div class="collection-text-container">
-                        <div class="collection-heading">
-                            <p>BRANDBEATS</p>
-                            <p>&#169 2017</p>
-                        </div>
-                        <div class="collection-text">
-                            <p>PODCAST SERIES</p>
-                            <p>Our podcast series garnering 45,000+ listens per episode providing candid conversations
-                                around various industry related topics</p>
-                            <br>
-                            <a href="#">Explore brndbeats</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <div class="collection-item-img item-img5"></div>
-                    <div class="collection-text-container">
-                        <div class="collection-heading">
-                            <p>APPLIED</p>
-                            <p>&#169 2020</p>
-                        </div>
-                        <div class="collection-text">
-                            <p>THOUGHTS & PERSPECTIVES</p>
-                            <p>Our panel series and thought-leadership platform where we share perspectives and tactics
-                                related to strategy, design and technology</p>
-                            <br>
-                            <a href="#">Visit Applied</a>
-                        </div>
-                    </div>
+        <!-- header -->
+        <header data-scroll data-scroll-speed="2.5">
+            <video src="/assets/header-vid.mp4" muted loop autoplay></video>
+            <div class="header-cursor-container">
+                <div class="cursor-container">
+                    <div class="header-cursor">PLAY REEL</div>
+                    <p>BASIC/DEPT <br>2010 - 2022</p>
                 </div>
             </div>
-            <div class="numbers"></div>
+        </header>
+
+        <!-- collections -->
+        <div class="collecctions" >
+            <div class="collections-header">
+                <!-- collections header text -->
+                <div class="collections-circle"></div>
+                <h6 class="collections-heading">
+                    <p>(6)INTERNAL WORKS <br> &#169 2022 c/o BASIC/DEOPT</p>
+                    <p>A COLLECTION OF INTERNAL PROJECTS AND INITIATIVES UNDER THE <br> BASIC BRAND</p>
+                </h6>
+                <div class="burger-close">
+                    <div class="burger-close-line burger-close-line1"></div>
+                    <div class="burger-close-line burger-close-line2"></div>
+                </div>
+            </div>
+
+            <!-- collections item -->
+            <div class="collections-item-container" data-scroll data-scroll-speed="2.5">
+                <div class="initiatives-container">
+                    <div class="collection-item">
+                        <div class="collection-item-img item-img1"></div>
+                        <div class="collection-text-container">
+                            <div class="collection-heading">
+                                <p>CULTURE MANUAL<span>&reg;</span></p>
+                                <p>&#169 2019</p>
+                            </div>
+                            <div class="collection-text">
+                                <p>CULTURE & ONBOARDING</p>
+                                <p>To help strangthen our culture and attrack world class talent, we created the Culture
+                                    Manual - an online guide for new hires that differentiates the employee onboarding
+                                    process and builds alignment for our collective.</p>
+                                <br>
+                                <a href="#">Visit the Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-item-img item-img2"></div>
+                        <div class="collection-text-container">
+                            <div class="collection-heading">
+                                <p>MOVES<span>&reg;</span></p>
+                                <p>&#169 2018</p>
+                            </div>
+                            <div class="collection-text">
+                                <p>OUR NEW HQ</p>
+                                <p>When we moved into our new HQ, we put together asite experience providng in-depth
+                                    look
+                                    into thetwo-year process imaging, designing and developing our new office we call
+                                    home.
+                                </p>
+                                <br>
+                                <a href="#">Visit the Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-item-img item-img3"></div>
+                        <div class="collection-text-container">
+                            <div class="collection-heading">
+                                <p>CREAFTED</p>
+                                <p>&#169 2019</p>
+                            </div>
+                            <div class="collection-text">
+                                <p>CREATIVE COMMUNITY</p>
+                                <p>A communal initiative we operate to clelbrate diversity and creativy by bringing
+                                    together
+                                    people feom diffeernt backgrounds and interests.</p>
+                                <br>
+                                <a href="#">Visit the Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-item-img item-img4"></div>
+                        <div class="collection-text-container">
+                            <div class="collection-heading">
+                                <p>BRANDBEATS</p>
+                                <p>&#169 2017</p>
+                            </div>
+                            <div class="collection-text">
+                                <p>PODCAST SERIES</p>
+                                <p>Our podcast series garnering 45,000+ listens per episode providing candid
+                                    conversations
+                                    around various industry related topics</p>
+                                <br>
+                                <a href="#">Explore brndbeats</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-item-img item-img5"></div>
+                        <div class="collection-text-container">
+                            <div class="collection-heading">
+                                <p>APPLIED</p>
+                                <p>&#169 2020</p>
+                            </div>
+                            <div class="collection-text">
+                                <p>THOUGHTS & PERSPECTIVES</p>
+                                <p>Our panel series and thought-leadership platform where we share perspectives and
+                                    tactics
+                                    related to strategy, design and technology</p>
+                                <br>
+                                <a href="#">Visit Applied</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="numbers"></div>
+            </div>
+
+            <!-- collections footer -->
+            <div class="collections-footer">
+                <div class="footer-copyright">
+                    <p>BSAIC/DEPT<span>&reg;</span>, INC</p>
+                    <P>10 - 10&#169</P>
+                </div>
+            </div>
+
         </div>
 
-        <!-- collections footer -->
-        <div class="collections-footer">
+        <section class="about-work" data-scroll data-scroll-speed="2.5">
+            <div class="about-work-text-container">
+                <p class="about-work-text">
+                    <span>BASIC/DEPT® </span> is a global branding and digital design agency building products,
+                    services,
+                    and eCommerce experiences that turn cultural values into company value.
+                </p>
+                <button class="cta-btn">
+                    SEE THE WORK
+                </button>
+            </div>
+            <div class="about-work-logo">
+                <p>B/D </p>
+                <span>&reg;</span>
+            </div>
+        </section>
+
+        <!-- work -->
+        <section class="work-section" data-scroll data-scroll-speed="2.5">
+            <div class="work-card">
+                <div class="work-img-container">
+                    <div class="work-img work-img1"></div>
+                </div>
+                <div class="work-img-text">
+                    <h3 class="work-heading">PANTAGONIA</h3>
+                    <p>AN ECOMMERCE EXPERIENCE DRIVEN BY PATAGONIA'S BRAND MISSION</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img-container">
+                    <div class="work-img work-img2"></div>
+                </div>
+                <div class="work-img-text">
+                    <h3 class="work-heading">WILSON</h3>
+                    <p>A CENTURY-OLD SPORTS BRAND FINDING ITS PLACE IN CULTURE</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img-container">
+                    <video src="/assets/work3-thumbnail.mp4" muted loop autoplay></video>
+                </div>
+                <div class="work-img-text">
+                    <h3 class="work-heading">GOOGLE STORE</h3>
+                    <p>AN ECOMMERCE EXPERIENCE HELPING GOOGLE BRING ITS HARDWARE TO PEOPLE ACROSS THE GLOBE</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- feautured engagements -->
+        <section class="featured" data-scroll data-scroll-speed="2.5">
+            <div class="gibberish">
+                <p>01</p>
+                <p>/05</p>
+                <span></span>
+            </div>
+            <h2 class="featured-heading">FEATURED ENGAGEMENTS</h2>
+            <div class="featured-company-container">
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="/assets/google-dark.svg" alt="google" class="google-logo">
+                        <div class="line"></div>
+                    </div>
+                    <h3 class="company-name">GOOGLE</h3>
+                    <p class="company-text">
+                        Our embedded partnership with google is as deep as it gets. We're the lead creative agency for
+                        Google Store and provide strategy, design and prototyping to other divisions. Learn more about
+                        our
+                        partnership <a href="#">here</a>.
+                    </p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="/assets/KFC-Logo.svg" alt="" class="kfc-logo">
+                        <div class="line"></div>
+                    </div>
+
+                    <h3 class="company-name">KFC</h3>
+                    <p class="company-text">
+                        An award-winning global, digital transformation engagement spanning eCommerce, mobile app and
+                        new
+                        drive thru experiences. Bringing KFS's brand story to life while making it easier for customers
+                        to
+                        buy chicken. Lean more about our partnership <a href="#">here</a>.
+                    </p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="/assets/Wilson-Logo.svg" alt="" class="wilson-logo">
+                        <div class="line"></div>
+                    </div>
+
+                    <h3 class="company-name">WILSON</h3>
+                    <p class="company-text">
+                        A reimagining of Wilson's brand visual identity, and brand campaign, to support a new product
+                        drop
+                        and the launch of the first brick and mortar retail location in the brand's 108-year history.
+                        Read
+                        our full case study <a href="#">here</a>.
+                    </p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="/assets/ATT-Logo.svg" alt="" class="att-logo">
+                        <div class="line"></div>
+                    </div>
+
+                    <h3 class="company-name">AT&T</h3>
+                    <p class="company-text">
+                        Redesigning the digital flagship for the largest telecommunications company in the world.
+                        Creating
+                        frictionless paths to purchase for a wide range of cunsumers across a vast portfolio of products
+                        and
+                        services.
+                    </p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="/assets/patagonia-dark.svg" alt="" class="pantagonia-logo">
+                        <div class="line"></div>
+                    </div>
+
+                    <h3 class="company-name">PANTAGONIA</h3>
+                    <p class="company-text">
+                        Ongoing partnership providing strategy, branding, experience design, and development focused on
+                        bringing consumers through brand-led programs and partforms. Read our full case study <a
+                            href="#">here</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about-section" data-scroll data-scroll-speed="2.5">
+            <div class="about-text-container">
+                <h3 class="about-text-heading">
+                    BASIC/DEPT® HELPS BRANDS ●CONNECT W/ CULTURE
+                </h3>
+                <p>ADWEEK <span>(AGENCY SPOTLIGHT)</span></p>
+                <button class="cta-btn">ABOUT US</button>
+            </div>
+            <div class="video-container" data-scroll data-scroll-speed="2">
+                <video src="/assets/Culture-Loop_v1.mp4" muted loop autoplay></video>
+            </div>
+        </section>
+
+
+        <!-- featured news section -->
+        <section class="featured-news" data-scroll data-scroll-speed="2.5">
+            <div class="featured-news-heading">
+                <h2 class="featured-heading">FEATURED NEWS</h2>
+                <button class="cta-btn">VIEW ALL</button>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img1"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">BASIC <span>&reg;</span> TAKES GLOBAL NETWORK OF THE YAER AT 26TH ANNUAL
+                        WEBBY AWARDS
+                    </h5>
+                    <p>AWARDS <span> 04.27.22</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img2"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">A FRESH COLLAB BRIXTON JUST IN TIME FOR SPRING
+                    </h5>
+                    <p>WORK <span> 04.14.22</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img3"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">BASIC <span>&reg;</span> EARNS 12 NOMINATIONS IN 26TH ANNUAL WEBBY
+                        AWARDS
+                    </h5>
+                    <p>AWARDS <span> 04.05.22</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img4"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">PATAFONIA RECOGNIZED FOR ENVIRONMENTAL IMPACTAT INAUGURAL AWARDS
+                    </h5>
+                    <p>AWARDS <span> 02.25.22</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img5"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">COWBOY AND BASIC<span>&reg;</span> RECOGNIZED IN 8 CATEGORIES
+                    </h5>
+                    <p>AWARDS <span> 12.0.21</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img6"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">FAST CO.: BASIC AND JFX TWAM UP FOR A DIGITAL OVERHAUL
+                    </h5>
+                    <p>PRESS <span> 11.30.21</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img-container">
+                    <div class="feature-img feature-img7"></div>
+                </div>
+                <div class="feature-about-text">
+                    <h5 class="feature-heading">BASIC AND WEBEX CHAMPION "HYBRID COLLABORATION"
+                    </h5>
+                    <p>PRESS <span> 08.19.21</span></p>
+                </div>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                        <rect x="0.1" y="7.5" width="14" height="2"></rect>
+                        <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                        <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                    </svg>
+                </figure>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer class="footer" data-scroll data-scroll-speed="2.5">
+            <div class="footer-about">
+                <div class="footer-logo">B/D&reg;</div>
+                <h4 class="footer-about-text">
+                    We collaborate with ambitious brands and people. Let's build. <a
+                        href="#">blackdot.info@gmail.com</a>
+                </h4>
+            </div>
+
+            <div class="footer-links-container">
+                <div class="footer-email">
+                    <h6 class="footer-heading">● STAY IN THE KNOW</h6>
+                    <div class="email-section">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                                <rect fill="#f4f4f4" x="0.1" y="7.5" width="14" height="2"></rect>
+                                <path fill="#f4f4f4" d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
+                                <path fill="#f4f4f4" d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="links-container">
+                    <div class="footer-links">
+                        <h6 class="footer-heading">● SOCIAL</h6>
+                        <span>Instagram</span>
+                        <span>Twitter</span>
+                        <span>LinkedIn</span>
+                        <span>Facebooke</span>
+                    </div>
+                    <div class="footer-links">
+                        <h6 class="footer-heading">● INITIATIVES</h6>
+                        <span>Crafted</span>
+                        <span>TCulture Manual</span>
+                        <span>Applied</span>
+                        <span>Brandbeats</span>
+                        <span>Moves</span>
+                        <span>B<span>&reg;</span>/Good</span>
+                    </div>
+                    <div class="footer-links">
+                        <h6 class="footer-heading">● OFFICES</h6>
+                        <span>Johannesburg-GU</span>
+                        <span>Cape Town-WC</span>
+                        <span>Lagos-NG</span>
+                        <span>London-EN</span>
+                    </div>
+                </div>
+            </div>
             <div class="footer-copyright">
-                <p>BSAIC/DEPT<span>&reg;</span>, INC</p>
-                <P>10 - 10&#169</P>
+                <p>BSAIC/DEPT<span>&reg;</span>,INC 10 - 20&#169</p>
+                <p>EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.&#8482;</p>
+                <P>TERMS, PRIVACY POLICY</P>
             </div>
-        </div>
+        </footer>
 
     </div>
 
-    <section class="about-work">
-        <div class="about-work-text-container">
-            <p class="about-work-text">
-                <span>BASIC/DEPT® </span> is a global branding and digital design agency building products, services,
-                and eCommerce experiences that turn cultural values into company value.
-            </p>
-            <button class="cta-btn">
-                SEE THE WORK
-            </button>
-        </div>
-        <div class="about-work-logo">
-            <p>B/D </p>
-            <span>&reg;</span>
-        </div>
-    </section>
 
-    <!-- work -->
-    <section class="work-section">
-        <div class="work-card">
-            <div class="work-img-container">
-                <div class="work-img work-img1"></div>
-            </div>
-            <div class="work-img-text">
-                <h3 class="work-heading">PANTAGONIA</h3>
-                <p>AN ECOMMERCE EXPERIENCE DRIVEN BY PATAGONIA'S BRAND MISSION</p>
-            </div>
-        </div>
-        <div class="work-card">
-            <div class="work-img-container">
-                <div class="work-img work-img2"></div>
-            </div>
-            <div class="work-img-text">
-                <h3 class="work-heading">WILSON</h3>
-                <p>A CENTURY-OLD SPORTS BRAND FINDING ITS PLACE IN CULTURE</p>
-            </div>
-        </div>
-        <div class="work-card">
-            <div class="work-img-container">
-                <video src="/assets/work3-thumbnail.mp4" muted loop autoplay></video>
-            </div>
-            <div class="work-img-text">
-                <h3 class="work-heading">GOOGLE STORE</h3>
-                <p>AN ECOMMERCE EXPERIENCE HELPING GOOGLE BRING ITS HARDWARE TO PEOPLE ACROSS THE GLOBE</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- feautured engagements -->
-    <section class="featured">
-        <div class="gibberish">
-            <p>01</p>
-            <p>/05</p>
-            <span></span>
-        </div>
-        <h2 class="featured-heading">FEATURED ENGAGEMENTS</h2>
-        <div class="featured-company-container">
-            <div class="company-card">
-                <div class="company-logo">
-                    <img src="/assets/google-dark.svg" alt="google" class="google-logo">
-                    <div class="line"></div>
-                </div>
-                <h3 class="company-name">GOOGLE</h3>
-                <p class="company-text">
-                    Our embedded partnership with google is as deep as it gets. We're the lead creative agency for
-                    Google Store and provide strategy, design and prototyping to other divisions. Learn more about our
-                    partnership <a href="#">here</a>.
-                </p>
-            </div>
-            <div class="company-card">
-                <div class="company-logo">
-                    <img src="/assets/KFC-Logo.svg" alt="" class="kfc-logo">
-                    <div class="line"></div>
-                </div>
-
-                <h3 class="company-name">KFC</h3>
-                <p class="company-text">
-                    An award-winning global, digital transformation engagement spanning eCommerce, mobile app and new
-                    drive thru experiences. Bringing KFS's brand story to life while making it easier for customers to
-                    buy chicken. Lean more about our partnership <a href="#">here</a>.
-                </p>
-            </div>
-            <div class="company-card">
-                <div class="company-logo">
-                    <img src="/assets/Wilson-Logo.svg" alt="" class="wilson-logo">
-                    <div class="line"></div>
-                </div>
-
-                <h3 class="company-name">WILSON</h3>
-                <p class="company-text">
-                    A reimagining of Wilson's brand visual identity, and brand campaign, to support a new product drop
-                    and the launch of the first brick and mortar retail location in the brand's 108-year history. Read
-                    our full case study <a href="#">here</a>.
-                </p>
-            </div>
-            <div class="company-card">
-                <div class="company-logo">
-                    <img src="/assets/ATT-Logo.svg" alt="" class="att-logo">
-                    <div class="line"></div>
-                </div>
-
-                <h3 class="company-name">AT&T</h3>
-                <p class="company-text">
-                    Redesigning the digital flagship for the largest telecommunications company in the world. Creating
-                    frictionless paths to purchase for a wide range of cunsumers across a vast portfolio of products and
-                    services.
-                </p>
-            </div>
-            <div class="company-card">
-                <div class="company-logo">
-                    <img src="/assets/patagonia-dark.svg" alt="" class="pantagonia-logo">
-                    <div class="line"></div>
-                </div>
-
-                <h3 class="company-name">PANTAGONIA</h3>
-                <p class="company-text">
-                    Ongoing partnership providing strategy, branding, experience design, and development focused on
-                    bringing consumers through brand-led programs and partforms. Read our full case study <a
-                        href="#">here</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- about -->
-    <section class="about-section" data-scroll-section>
-        <div class="about-text-container">
-            <h3 class="about-text-heading">
-                BASIC/DEPT® HELPS BRANDS ●CONNECT W/ CULTURE
-            </h3>
-            <p>ADWEEK <span>(AGENCY SPOTLIGHT)</span></p>
-            <button class="cta-btn">ABOUT US</button>
-        </div>
-        <div class="video-container" data-scroll data-scroll-speed="2">
-            <video src="/assets/Culture-Loop_v1.mp4" muted loop autoplay></video>
-        </div>
-    </section>
-
-
-    <!-- featured news section -->
-    <section class="featured-news">
-        <div class="featured-news-heading">
-            <h2 class="featured-heading">FEATURED NEWS</h2>
-            <button class="cta-btn">VIEW ALL</button>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img1"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">BASIC <span>&reg;</span> TAKES GLOBAL NETWORK OF THE YAER AT 26TH ANNUAL
-                    WEBBY AWARDS
-                </h5>
-                <p>AWARDS <span> 04.27.22</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img2"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">A FRESH COLLAB BRIXTON JUST IN TIME FOR SPRING
-                </h5>
-                <p>WORK <span> 04.14.22</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img3"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">BASIC <span>&reg;</span> EARNS 12 NOMINATIONS IN 26TH ANNUAL WEBBY AWARDS
-                </h5>
-                <p>AWARDS <span> 04.05.22</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img4"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">PATAFONIA RECOGNIZED FOR ENVIRONMENTAL IMPACTAT INAUGURAL AWARDS
-                </h5>
-                <p>AWARDS <span> 02.25.22</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img5"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">COWBOY AND BASIC<span>&reg;</span> RECOGNIZED IN 8 CATEGORIES
-                </h5>
-                <p>AWARDS <span> 12.0.21</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img6"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">FAST CO.: BASIC AND JFX TWAM UP FOR A DIGITAL OVERHAUL
-                </h5>
-                <p>PRESS <span> 11.30.21</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-        <div class="feature-container">
-            <div class="feature-img-container">
-                <div class="feature-img feature-img7"></div>
-            </div>
-            <div class="feature-about-text">
-                <h5 class="feature-heading">BASIC AND WEBEX CHAMPION "HYBRID COLLABORATION"
-                </h5>
-                <p>PRESS <span> 08.19.21</span></p>
-            </div>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                    <rect x="0.1" y="7.5" width="14" height="2"></rect>
-                    <path d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                    <path d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                </svg>
-            </figure>
-        </div>
-    </section>
-
-    <!-- footer section -->
-    <footer class="footer">
-        <div class="footer-about">
-            <div class="footer-logo">B/D&reg;</div>
-            <h4 class="footer-about-text">
-                We collaborate with ambitious brands and people. Let's build. <a href="#">blackdot.info@gmail.com</a>
-            </h4>
-        </div>
-
-        <div class="footer-links-container">
-            <div class="footer-email">
-                <h6 class="footer-heading">● STAY IN THE KNOW</h6>
-                <div class="email-section">
-                    <input type="email" placeholder="Email Address">
-                    <button type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
-                            <rect fill="#f4f4f4" x="0.1" y="7.5" width="14" height="2"></rect>
-                            <path fill="#f4f4f4" d="M8.4,0l8.5,8.5l-1.4,1.4L7,1.4L8.4,0z"></path>
-                            <path fill="#f4f4f4" d="M7,15.6l8.5-8.5l1.4,1.4L8.4,17L7,15.6z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="links-container">
-                <div class="footer-links">
-                    <h6 class="footer-heading">● SOCIAL</h6>
-                    <span>Instagram</span>
-                    <span>Twitter</span>
-                    <span>LinkedIn</span>
-                    <span>Facebooke</span>
-                </div>
-                <div class="footer-links">
-                    <h6 class="footer-heading">● INITIATIVES</h6>
-                    <span>Crafted</span>
-                    <span>TCulture Manual</span>
-                    <span>Applied</span>
-                    <span>Brandbeats</span>
-                    <span>Moves</span>
-                    <span>B<span>&reg;</span>/Good</span>
-                </div>
-                <div class="footer-links">
-                    <h6 class="footer-heading">● OFFICES</h6>
-                    <span>Johannesburg-GU</span>
-                    <span>Cape Town-WC</span>
-                    <span>Lagos-NG</span>
-                    <span>London-EN</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>BSAIC/DEPT<span>&reg;</span>,INC 10 - 20&#169</p>
-            <p>EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.&#8482;</p>
-            <P>TERMS, PRIVACY POLICY</P>
-        </div>
-    </footer>
-
-
-    
     <!-- locomotive -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <!-- gsap -->
