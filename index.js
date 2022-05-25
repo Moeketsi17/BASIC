@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset
 
     if (currentScroll < 0) {
-        body.classList.add("sticky");
+        body.classList.remove("scroll-up")
     }
 
     lastScroll =currentScroll
