@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     width: 100%;
@@ -84,10 +85,11 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 50%;
+    width: 100%;
     list-style: none;
     justify-content: space-between;
     height: 30px;
+    position: absolute;
 }
 
 .nav-links li a {
@@ -96,6 +98,72 @@ body, html {
     font-size: 14px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header section */
+header {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+header video {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.header-cursor-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    top: 10vh;
+}
+
+.cursor-container {
+    /* transform: translate(-50%, -50%); */
+    transition: all 0.3s ease;
+    transform-origin: 100% 100%;
+
+}
+
+.header-cursor {
+    height: 130px;
+    width: 130px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cursor-container p {
+    text-align: center;
+}
 
 
 
@@ -205,6 +273,7 @@ body, html {
         list-style: none;
         justify-content: space-between;
         height: 30px;
+        position: relative;
     }
 
     .nav-links li a {
@@ -264,7 +333,7 @@ body, html {
         font-size: 14px;
         font-weight: 500px;
         color: #f9cdcd;
-        
+
     }
 
     .collections-heading p:nth-child(1) {
@@ -423,7 +492,7 @@ body, html {
         padding: 1rem 5% 1rem;
     }
 
-    
+
 
 
 
@@ -463,7 +532,7 @@ body, html {
         /* transform: translate(-50%, -50%); */
         transition: all 0.3s ease;
         transform-origin: 100% 100%;
-        
+
     }
 
     .header-cursor {
@@ -474,7 +543,7 @@ body, html {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 
     .cursor-container p {
@@ -529,11 +598,11 @@ body, html {
         left: 0;
         background-color: #252422;
         z-index: 1;
-        transition: 0.8s ;
-        
+        transition: 0.8s;
+
     }
 
-    .cta-btn:hover::before  {
+    .cta-btn:hover::before {
         color: #f4f4f4;
         height: 180%;
     }
@@ -547,7 +616,7 @@ body, html {
         z-index: 3;
     }
 
-    
+
 
     .about-work-logo {
         padding: 0;
@@ -581,17 +650,17 @@ body, html {
         padding: 0 5% 3rem;
         gap: 1rem;
         background-color: #f4f4f4;
-        
+
     }
 
     .work-card {
-        width: 100%;    
-        cursor: pointer;    
+        width: 100%;
+        cursor: pointer;
     }
 
     .work-card:hover .work-img {
-        width: 100%;    
-        cursor: pointer; 
+        width: 100%;
+        cursor: pointer;
         transform: scale(1);
     }
 
@@ -801,7 +870,7 @@ body, html {
     }
 
     .featured-news-heading {
-        display: flex ;
+        display: flex;
         align-items: center;
         justify-content: space-between;
     }
@@ -816,13 +885,13 @@ body, html {
         margin-bottom: 5rem;
     }
 
-    .feature-container:hover  .feature-img {
+    .feature-container:hover .feature-img {
         transform: scale(1);
     }
 
-    .feature-container:hover  .feature-heading {
+    .feature-container:hover .feature-heading {
         text-decoration: underline;
-        transition: text-decoration 1s ease ;
+        transition: text-decoration 1s ease;
     }
 
     .feature-img-container {
@@ -882,7 +951,7 @@ body, html {
         line-height: 42.2px;
         width: 60%;
         font-weight: 500;
-        transition: text-decoration 1s ease ;
+        transition: text-decoration 1s ease;
     }
 
     .feature-about-text p {
@@ -904,7 +973,7 @@ body, html {
         color: #252422;
     }
 
-    
+
 
 
     /* footer section */
@@ -1039,31 +1108,3 @@ body, html {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
