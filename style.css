@@ -102,6 +102,76 @@ html {
 
 
 
+/* about */
+.about-work {
+    display: flex;
+    padding: 10rem 5%;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+.about-work-text-container {
+    width: 100%;
+
+}
+
+.about-work-text {
+    font-size: 25px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #252422;
+}
+
+.about-text span {
+    font-size: 40px;
+}
+
+.cta-btn {
+    margin-top: 2rem;
+    border: 1px solid #252422;
+    height: 30px;
+    width: 170px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    color: #252422;
+    z-index: 1;
+}
+
+.cta-btn p {
+    color: #252422;
+}
+
+
+.about-work-logo {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.about-work-logo p {
+    color: #252422;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.about-work-logo span {
+    color: #252422;
+    font-size: 250px;
+    font-weight: 300;
+    position: relative;
+    bottom: 4rem;
+}
+
+
+
+
+
 
 
 
@@ -556,6 +626,7 @@ header video {
         display: flex;
         padding: 10rem 5%;
         background-color: #f4f4f4;
+        flex-direction: row;
     }
 
     .about-work-text-container {
