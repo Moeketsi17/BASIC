@@ -40,7 +40,24 @@ window.addEventListener('scroll', () => {
 
 
 
-// toggle collecctions menu ...
+
+
+// toggle collecctions burger ...
+let menu = document.querySelector(".menu-btn");
+let navLinks = document.querySelector(".nav-links");
+
+menu.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
+
+
+
+
+
+
+
+// toggle collecctions burger ...
 let burger = document.querySelector(".burger");
 let collections = document.querySelector(".collecctions");
 let burgerClose = document.querySelector(".burger-close");

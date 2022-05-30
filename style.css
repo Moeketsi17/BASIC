@@ -46,7 +46,7 @@ html {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
 }
 
@@ -82,18 +82,33 @@ html {
 
 
 .nav-links {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     list-style: none;
     justify-content: space-between;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #252422;
-    padding: 5rem 5%;
+    padding: 20px 5% 0;
+    z-index: 1000;
+    transition: all 1s ease-in;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    height: 80%;
+    padding: 2.5rem 0 0;
 }
 
 .nav-links li a,
@@ -103,6 +118,66 @@ html {
     font-size: 18px;
     font-weight: 600;
 }
+
+.navlinks-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navlinks-footer p {
+    padding: 2rem 0 ;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+
+.navlinks-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+} 
+
+.navlinks-logo {
+    color: #f9cdcd;
+    font-size: 22px;
+}
+
+.navlinks-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #f9cdcd;
+    position: relative;
+}
+
+.navlinks-burger-line1 {
+    height: 2px;
+    width: 20px;
+    background-color: #f9cdcd;
+    transform: rotate(-45deg) translateX(-0px) translateY(-0px);
+    transition: all 0.4s ease;
+    position: absolute;
+}
+
+.navlinks-burger-line2 {
+    height: 2px;
+    width: 20px;
+    background-color: #f9cdcd;
+    transform: rotate(45deg) translateX(-0px) translateY(-0px);
+    transition: all 0.4s ease;
+    position: absolute;
+}
+
+
+
+
+
+
 
 
 
@@ -903,6 +978,13 @@ figure svg {
         padding: 0 0;
     }
 
+    .links-container {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        list-style: none;
+    }
+
     .nav-links li a {
         text-decoration: none;
         color: #fff;
@@ -914,6 +996,10 @@ figure svg {
         display: none;
     }
 
+    .navlinks-nav,
+    .navlinks-footer {
+        display: none;
+    }
 
 
 
