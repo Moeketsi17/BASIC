@@ -259,7 +259,7 @@ header video {
 .work-section {
     display: flex;
     width: 100%;
-    padding: 0 5% 3rem;
+    padding: 0 5% 1rem;
     gap: 1rem;
     background-color: #f4f4f4;
 
@@ -267,12 +267,14 @@ header video {
 
 .work-card {
     width: 100%;
+    height: 500px;
     cursor: pointer;
+    position: relative;
 }
 
 .work-img-container {
     width: 100%;
-    height: 500px;
+    height: 330px;
     position: relative;
     overflow: hidden;
 }
@@ -331,21 +333,21 @@ header video {
 
 /* featured engagements */
 .featured {
-    padding: 2rem 5% 7rem;
+    padding: 2rem 5% 2rem;
     background-color: #f4f4f4;
     position: relative;
 }
 
 .gibberish {
     border-top: 1px solid #252422;
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .gibberish p {
     color: #252422;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .gibberish p:nth-child(2) {
@@ -353,14 +355,14 @@ header video {
 }
 
 .gibberish span {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #252422;
 }
 
 .featured-heading {
-    padding: 8rem 0;
+    padding: 3rem 0;
     font-size: 20px;
     width: 130px;
     color: #252422;
@@ -434,6 +436,12 @@ header video {
 }
 
 
+
+
+
+
+
+
     /* about section */
     .about-section {
         display: flex;
@@ -444,9 +452,10 @@ header video {
     }
 
     .about-text-container {
-        padding: 1rem 0 0;
+        padding: 0rem 0 0;
         width: 100%;
         position: relative;
+        background-color: lightcoral;
     }
 
     .about-text-heading {
