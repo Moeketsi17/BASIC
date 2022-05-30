@@ -329,6 +329,111 @@ header video {
 
 
 
+    /* featured engagements */
+    .featured {
+        padding: 2rem 5% 7rem;
+        background-color: #f4f4f4;
+        position: relative;
+    }
+
+    .gibberish {
+        border-top: 1px solid #252422;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gibberish p {
+        color: #252422;
+        font-size: 14px;
+    }
+
+    .gibberish p:nth-child(2) {
+        width: 40%;
+    }
+
+    .gibberish span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #252422;
+    }
+
+    .featured-heading {
+        padding: 8rem 0;
+        font-size: 2.6rem;
+        width: 300px;
+        color: #252422;
+        line-height: 2.8rem;
+    }
+
+    .featured-company-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 2rem;
+        position: relative;
+        height: 580px;
+    }
+
+    .featured-company-container::-webkit-scrollbar {
+        height: 3px;
+        background-color: #c5c5c5;
+    }
+
+    .featured-company-container::-webkit-scrollbar-thumb {
+        background-color: #252422;
+    }
+
+    .company-logo {
+        height: 11rem;
+    }
+
+    .company-logo img {
+        line-height: 4rem;
+    }
+
+    .line {
+        margin-top: 1rem;
+        height: 2px;
+        width: 30px;
+        background-color: #252422;
+    }
+
+    .company-name {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    .company-card {
+        height: 500px;
+        min-width: 400px;
+        position: relative;
+        color: #252422;
+        padding: 1rem 5% 0 0;
+    }
+
+    .google-logo {
+        width: 130px;
+    }
+
+    .pantagonia-logo {
+        width: 220px;
+    }
+
+    .company-text,
+    .company-text a {
+        font-weight: 500;
+        font-size: 18px;
+        color: #252422;
+    }
+
+
+
+
+
+
+
 
 
 
