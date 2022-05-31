@@ -1116,22 +1116,23 @@ figure svg {
 
     .nav-links {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         flex-direction: row;
-        width: 50%;
+        max-width: 600px;
         list-style: none;
         justify-content: space-between;
-        height: 30px;
+        height: 40px;
         position: relative;
-        background-color: none;
         padding: 0 0;
+        background-color: transparent;
     }
 
     .links-container {
         display: flex;
         align-items: flex-end;
         flex-direction: row;
-        list-style: none;
+        justify-content: space-between;
+        min-width: 100%;
     }
 
     .nav-links li a {
@@ -1994,7 +1995,7 @@ figure svg {
     .links-container {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        min-width: 50%;
     }
 
     .footer-links {
