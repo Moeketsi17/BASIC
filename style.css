@@ -136,6 +136,7 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 15vh;
 
 }
 
@@ -200,7 +201,7 @@ html {
     display: flex;
     align-items: center;
     transition: display 0.3s ease-in;
-    padding: 1.5rem 5%;
+    padding: 0 5%;
 }
 
 /* 
