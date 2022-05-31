@@ -42,9 +42,10 @@ window.addEventListener('scroll', () => {
 
 
 
-// toggle collecctions burger ...
+// toggle  burger menu mobile ...
 let menu = document.querySelector(".menu-btn");
 let navLinks = document.querySelector(".nav-links");
+let initiatives = document.querySelector("initiatives");
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("show");

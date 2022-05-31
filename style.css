@@ -186,6 +186,235 @@ html {
 
 
 
+/* collections section */
+    .collecctions {
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #252422;
+        z-index: 10000;
+        display: flex;
+        transition: display 0.3s ease-in;
+        padding: 0 5%;
+    }
+/* 
+    .collecctions.active {
+        opacity: 1;
+        z-index: 10000;
+        display: flex;
+    }
+
+    .collecctions.close {
+        z-index: 1;
+        display: none;
+    } */
+
+
+    .collections-header {
+        display: none;
+    }
+
+    .collections-circle {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #f9cdcd;
+    }
+
+    .collections-heading {
+        display: flex;
+        width: 85%;
+    }
+
+    .collections-heading p {
+        font-size: 14px;
+        font-weight: 500px;
+        color: #f9cdcd;
+
+    }
+
+    .collections-heading p:nth-child(1) {
+        width: 190px;
+        margin-right: 3rem;
+    }
+
+    .collections-heading p:nth-child(2) {
+        width: 480px;
+    }
+
+    .burger-close {
+        height: 45px;
+        width: 45px;
+        border: 2px solid #f9cdcd;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .burger-close-line {
+        height: 2.45px;
+        width: 25px;
+        background-color: #f9cdcd;
+
+    }
+
+    .burger-close-line1 {
+        transform: rotate(45deg) translateX(19px) translateY(7px);
+        transition: all 0.4s ease;
+    }
+
+    .burger-close-line2 {
+        transform: rotate(-45deg) translateX(-6px) translateY(17px);
+        transition: all 0.4s ease;
+    }
+
+    .collections-item-container {
+        padding: 0 5%;
+    }
+
+    .initiatives-container {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        position: relative;
+    }
+
+    .initiatives-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .collection-item {
+        position: relative;
+        min-width: 380px;
+        height: 420px;
+        border-left: 1px solid #f9cdcd;
+        padding: 0 10px;
+    }
+
+    .collection-item-img {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item-img1 {
+        background-image: url(/assets/Initatives1.png);
+    }
+
+    .item-img2 {
+        background-image: url(/assets/Initatives2.png);
+    }
+
+    .item-img3 {
+        background-image: url(/assets/Initatives3.png);
+    }
+
+    .item-img4 {
+        background-image: url(/assets/Initatives4.png);
+    }
+
+    .item-img5 {
+        background-image: url(/assets/Initatives5.png);
+    }
+
+
+    .collection-text-container {
+        padding: 15px 10px 0;
+    }
+
+    .collection-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collection-heading p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #f9cdcd;
+    }
+
+    .collection-text {
+        overflow: hidden;
+        height: 22px;
+        transition: height 0.3s ease-in;
+    }
+
+    .collection-item:hover .collection-text {
+        height: 160px;
+    }
+
+    .collection-text p {
+        font-size: 12px;
+        color: #f9cdcd;
+        font-weight: 500;
+    }
+
+    .collection-text p:nth-child(1) {
+        line-height: 25px;
+    }
+
+    .collection-item:hover .collection-item-img {
+        height: 160px;
+        width: 100%;
+        transition: all 0.3s ease-in;
+    }
+
+
+
+    .collection-item:hover .collection-text p:nth-child(2),
+    .collection-item:hover .collection-text a {
+        display: block;
+        overflow: hidden;
+    }
+
+
+    .collection-text p:nth-child(2),
+    .collection-text a {
+        display: none;
+    }
+
+    .collection-text p:nth-child(2) {
+        line-height: 17px;
+    }
+
+    .collection-text a {
+        color: #f9cdcd;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+
+    .collections-footer {
+        padding: 1rem 5% 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* header section */
 header {
@@ -1028,6 +1257,7 @@ figure svg {
         z-index: 1;
         display: none;
         transition: display 0.3s ease-in;
+        padding: 0;
     }
 
     .collecctions.active {
@@ -1108,6 +1338,7 @@ figure svg {
 
     .initiatives-container {
         display: flex;
+        flex-direction: row;
         overflow: auto;
         position: relative;
     }
