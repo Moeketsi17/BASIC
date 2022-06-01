@@ -49,6 +49,10 @@ let initiatives = document.querySelector("initiatives");
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("show");
+
+    initiatives.addEventListener("click", () => {
+        collections.classList.toggle("active");
+    })
 });
 
 

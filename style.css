@@ -26,7 +26,7 @@ html {
     left: 0;
     width: 100%;
     height: 15vh;
-    z-index: 100;
+    z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
 
@@ -82,7 +82,7 @@ html {
     left: 0;
     background-color: #252422;
     padding: 0 5% 0;
-    z-index: 1000;
+    z-index: 2000;
     transition: all 1s ease-in;
 }
 
@@ -125,7 +125,8 @@ html {
     align-items: center;
     width: 100%;
     height: 15vh;
-
+    border-bottom: 1px solid #f9cdcd;
+    
 }
 
 .navlinks-logo {
@@ -179,17 +180,19 @@ html {
 .collecctions {
     justify-content: space-between;
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #252422;
-    z-index: 1000;
+    z-index: 10000;
     display: flex;
     align-items: center;
     transition: display 0.3s ease-in;
-    padding: 0 5%;
+    padding: 1.2rem 5%;
+    overflow: hidden;
+    transform: translateX(100%);
 }
 
 /* 
@@ -211,8 +214,9 @@ html {
 
 
 .collections-item-container {
-    padding: 0;
+    padding: 1rem 0;
     width: 100%;
+    
 }
 
 .initiatives-container {
