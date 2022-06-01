@@ -45,27 +45,26 @@ window.addEventListener('scroll', () => {
 // toggle  burger menu mobile ...
 let menu = document.querySelector(".menu-btn");
 let navLinks = document.querySelector(".nav-links");
-let initiatives = document.querySelector("initiatives");
+let initiatives = document.querySelector(".initiatives");
+
+let burger = document.querySelector(".burger");
+let collections = document.querySelector(".collecctions");
+let burgerClose = document.querySelector(".burger-close");
+
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("show");
 
     initiatives.addEventListener("click", () => {
         collections.classList.toggle("active");
-    })
+    });
 });
 
 
 
 
 
-
-
-
 // toggle collecctions burger ...
-let burger = document.querySelector(".burger");
-let collections = document.querySelector(".collecctions");
-let burgerClose = document.querySelector(".burger-close");
 
 burger.addEventListener("click", () => {
     collections.classList.toggle("active");
