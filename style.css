@@ -104,6 +104,7 @@ html {
 
 .links-container {
     display: flex;
+
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
@@ -1116,7 +1117,7 @@ figure svg {
 
     .nav-links {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: row;
         max-width: 600px;
         list-style: none;
@@ -1128,11 +1129,13 @@ figure svg {
     }
 
     .links-container {
+        position: relative;
         display: flex;
         align-items: flex-end;
         flex-direction: row;
         justify-content: space-between;
-        min-width: 100%;
+        width: 100%;
+        
     }
 
     .nav-links li a {
@@ -1428,7 +1431,6 @@ figure svg {
         /* transform: translate(-50%, -50%); */
         transition: all 0.3s ease;
         transform-origin: 100% 100%;
-
     }
 
     .header-cursor {
@@ -1440,7 +1442,6 @@ figure svg {
         align-items: center;
         justify-content: center;
         font-size: 16px;
-
     }
 
     .cursor-container p {
@@ -1459,7 +1460,6 @@ figure svg {
 
     .about-work-text-container {
         width: 50%;
-
     }
 
     .about-work-text {
