@@ -1940,7 +1940,7 @@ figure svg {
     }
 
     .footer-email {
-        width: 40%;
+        min-width: 40%;
     }
 
     .footer-heading {
@@ -1983,7 +1983,7 @@ figure svg {
         color: #f4f4f4;
     }
 
-    .links-container {
+    .footer-links-container {
         display: flex;
         justify-content: space-between;
         min-width: 50%;
