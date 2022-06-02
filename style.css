@@ -761,6 +761,7 @@ header video {
     /* height: 280px; */
     cursor: pointer;
     margin-bottom: 5rem;
+    position: relative;
 }
 
 .feature-img-container {
@@ -818,11 +819,12 @@ header video {
 
 .feature-heading {
     font-size: 25px;
-    line-height: 20.2px;
+    line-height: 27px;
     width: 100%;
     font-weight: 500;
     transition: text-decoration 1s ease;
     padding: 1.5rem 0 1rem;
+    height: 7rem;
 }
 
 .feature-about-text p {
@@ -835,9 +837,11 @@ header video {
 }
 
 figure {
-    width: 35px;
-    height: 35px;
-    position: relative;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
 }
 
 figure svg {

@@ -18,7 +18,15 @@ window.addEventListener('scroll', () => {
 
 // })
 
-let scrollScrub = document.querySelector("")
+let scrollScrub = document.querySelector(".scroll-container");
+
+gsap.to(scrollScrub, {
+
+    scrollTrigger: {
+        scrub: 3,
+    }
+})
+
 
 
 
