@@ -879,18 +879,19 @@ figure svg {
 .footer-logo {
     color: #f4f4f4;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .footer-about-text {
     flex-direction: column;
-    width: 50%;
+    width: 55%;
+    padding-top: 4rem;
 }
 
 .footer-about-text,
 .footer-about-text a {
-    font-size: 32px;
-    line-height: 33px;
+    font-size: 20px;
+    line-height: 22px;
     font-weight: 600;
     color: #f4f4f4;
 }
@@ -900,14 +901,15 @@ figure svg {
     display: flex;
     justify-content: space-between;
     padding: 3rem 0;
+    flex-direction: column;
 }
 
 .footer-email {
-    width: 40%;
+    width: 100%;
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 19px;
     color: #f4f4f4;
     font-weight: 500;
@@ -925,6 +927,7 @@ figure svg {
 .email-section input {
     background: transparent;
     font-size: 18px;
+    height: 3rem;
     border: none;
     outline: none;
     color: #f4f4f4;
@@ -946,34 +949,34 @@ figure svg {
     color: #f4f4f4;
 }
 
-.links-container {
+.ul-links-container {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
+    flex-direction: column;
 }
 
 .footer-links {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 .footer-links span {
     color: #f4f4f4;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
     cursor: pointer;
 }
 
-.footer-links span:hover {
-    text-decoration: underline;
-}
 
 .footer-copyright {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 0rem;
 }
 
 .footer-copyright p {
@@ -1923,6 +1926,7 @@ figure svg {
     .footer-about-text {
         flex-direction: column;
         width: 50%;
+        padding-top: 0rem;
     }
 
     .footer-about-text,
@@ -1938,6 +1942,7 @@ figure svg {
         display: flex;
         justify-content: space-between;
         padding: 3rem 0;
+        flex-direction: row;
     }
 
     .footer-email {
@@ -1984,15 +1989,17 @@ figure svg {
         color: #f4f4f4;
     }
 
-    .footer-links-container {
+    .ul-links-container {
         display: flex;
         justify-content: space-between;
         min-width: 50%;
+        flex-direction: row;
     }
 
     .footer-links {
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
 
     .footer-links span {
@@ -2009,6 +2016,7 @@ figure svg {
 
     .footer-copyright {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0 2rem;
