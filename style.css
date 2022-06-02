@@ -964,7 +964,7 @@ figure svg {
 
 .footer-links span {
     color: #f4f4f4;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     cursor: pointer;
@@ -1946,7 +1946,7 @@ figure svg {
     }
 
     .footer-email {
-        min-width: 40%;
+        max-width: 40%;
     }
 
     .footer-heading {
@@ -1992,7 +1992,7 @@ figure svg {
     .ul-links-container {
         display: flex;
         justify-content: space-between;
-        min-width: 50%;
+        max-width: 50%;
         flex-direction: row;
     }
 
