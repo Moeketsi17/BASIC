@@ -1,12 +1,24 @@
 
-// lococmotive scroll
-const scroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true,
-    tablet: { smooth: true },
-    smartphone: { smooth: true },
+// sticky nav on scroll-up
+const body = document.body;
+let lastScroll = 0;
 
-})
+window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset)
+});
+
+
+
+// lococmotive scroll
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector("[data-scroll-container]"),
+//     smooth: true,
+//     tablet: { smooth: true },
+//     smartphone: { smooth: true },
+
+// })
+
+let scrollScrub = document.querySelector("")
 
 
 
@@ -23,20 +35,6 @@ function cursor(e){
 }
 
 
-
-// sticky nav
-const body = document.body;
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset
-
-    if (currentScroll < 0) {
-        body.classList.remove("scroll-up")
-    }
-
-    lastScroll =currentScroll
-});
 
 
 
