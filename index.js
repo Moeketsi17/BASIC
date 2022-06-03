@@ -17,16 +17,14 @@ const scroll = new LocomotiveScroll({
     smartphone: { smooth: true },
 })
 
-let tl = gsap.to(".about-text-container", {
-    scrollTrigger: {
-        trigger: ".about-text-container",
-        start: "top 90%",
-        end: "top 20%",
-        scrub: 4,
-        pin: "true",
-        toggleActions: "restart none none none",
-    }
-})
+let st = ScrollTrigger.create({
+        trigger: ".about-work",
+        pin: ".about-work-text-container",
+        start: "top center",
+        end: "top bottom"
+    });
+
+console.log(st.pin);
 
 
 
