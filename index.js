@@ -17,15 +17,17 @@ const scroll = new LocomotiveScroll({
     smartphone: { smooth: true },
 })
 
-let videoText = document.querySelector(".about-text-container");
-
-gsap.from(videoText, {
+let tl = gsap.to(".about-text-container", {
     scrollTrigger: {
-        scrub: 1,
-        pin: "true"
-        
+        trigger: ".about-text-container",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: 4,
+        pin: "true",
+        toggleActions: "restart none none none",
     }
 })
+
 
 
 
