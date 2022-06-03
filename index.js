@@ -10,20 +10,20 @@ window.addEventListener('scroll', () => {
 
 
 // lococmotive scroll
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector("[data-scroll-container]"),
-//     smooth: true,
-//     tablet: { smooth: true },
-//     smartphone: { smooth: true },
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    tablet: { smooth: true },
+    smartphone: { smooth: true },
+})
 
-// })
+let videoText = document.querySelector(".about-text-container");
 
-let scrollScrub = document.querySelector(".scroll-container");
-
-gsap.to(scrollScrub, {
-
+gsap.from(videoText, {
     scrollTrigger: {
-        scrub: 3,
+        scrub: 1,
+        pin: "true"
+        
     }
 })
 
