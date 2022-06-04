@@ -1,15 +1,3 @@
-
-// sticky nav on scroll-up
-const body = document.body;
-let lastScroll = 0;
-let scrollWindow = document.querySelector("c-scrollbar");
-
-body.addEventListener('scroll', () => {
-    console.log(scrollWindow);
-});
-
-
-
 // lococmotive scroll
 const scroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
@@ -18,8 +6,20 @@ const scroll = new LocomotiveScroll({
     smartphone: { smooth: true },
 })
 
+
+
+// sticky nav on scroll-up
+const body = document.body;
+let lastScroll = 0;
+let scrollWindow = document.querySelector("c-scrollbar");
+
+// body.addEventListener('scroll', () => {
+//     console.log(scrollWindow);
+// });
+
+
 scroll.on("scroll", () => {
-    if (scroll.y > 100) {
+    if (body.scroll.y < 0) {
         // 
     } else {
         // 
@@ -27,7 +27,9 @@ scroll.on("scroll", () => {
     
 })
 
-console.log(e.scroll.y)
+console.log(body.scroll.y)
+
+
 // let st = ScrollTrigger.create({
 //         trigger: ".about-work",
 //         pin: ".about-work-text-container",
@@ -38,20 +40,6 @@ console.log(e.scroll.y)
 // console.log(st.pin);
 
 
-
-
-
-
-
-
-// header mouse
-let mouseCursor = document.querySelector(".header-cursor");
-
-window.addEventListener("mousemove", cursor)
-function cursor(e){
-    mouseCursor.style.top = e.pageY + "px";
-    mouseCursor.style.left = e.pageX + "px";
-}
 
 
 
