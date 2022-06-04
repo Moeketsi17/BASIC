@@ -19,14 +19,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 0 5%;
     /* mix-blend-mode: difference; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 15vh;
-    z-index: 1000;
+    /* z-index: 1000; */
     transition: all 0.3s ease-in-out;
 }
 
@@ -191,7 +191,6 @@ html {
     align-items: center;
     transition: display 0.3s ease-in;
     padding: 1.2rem 5%;
-    overflow: hidden;
     transform: translateX(100%);
 }
 
@@ -1177,9 +1176,11 @@ figure svg {
         left: 0;
         background-color: #252422;
         z-index: 100000;
-        display: flex;
+        display: none;
+        align-items: flex-start;
         transition: display 0.3s ease-in;
         padding: 0;
+        transform: translateX(0);
     }
 
     .collecctions.active {
@@ -1277,6 +1278,7 @@ figure svg {
         position: relative;
         min-width: 380px;
         height: 420px;
+        border-bottom: 0;
         border-left: 1px solid #f9cdcd;
         padding: 0 10px;
     }

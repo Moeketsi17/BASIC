@@ -73,10 +73,10 @@ burger.addEventListener("click", () => {
     collections.classList.toggle("active");
 
     // collecctions item animation
-    // let tl1 = gsap.timeline()
-    // tl1.from('.collections-item-container',
-    //     {x:1200, duration: 1,}
-    // );
+    let tl1 = gsap.timeline()
+    tl1.from('.collections-item-container',
+        {x:1200, duration: 1,}
+    );
 
 
 })
