@@ -17,14 +17,14 @@ const scroll = new LocomotiveScroll({
     smartphone: { smooth: true },
 })
 
-let st = ScrollTrigger.create({
-        trigger: ".about-work",
-        pin: ".about-work-text-container",
-        start: "top center",
-        end: "top bottom"
-    });
+// let st = ScrollTrigger.create({
+//         trigger: ".about-work",
+//         pin: ".about-work-text-container",
+//         start: "top center",
+//         end: "top bottom"
+//     });
 
-console.log(st.pin);
+// console.log(st.pin);
 
 
 
@@ -53,34 +53,32 @@ let menu = document.querySelector(".menu-btn");
 let navLinks = document.querySelector(".nav-links");
 let initiatives = document.querySelector(".initiatives");
 
-let burger = document.querySelector(".burger");
-let collections = document.querySelector(".collecctions");
-let burgerClose = document.querySelector(".burger-close");
+
 
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("show");
 
-    initiatives.addEventListener("click", () => {
-        collections.classList.toggle("active");
-    });
+
 });
 
 
-
+let burger = document.querySelector(".burger");
+let collections = document.querySelector(".collecctions");
+let burgerClose = document.querySelector(".burger-close");
 
 
 // toggle collecctions burger ...
-
 burger.addEventListener("click", () => {
     collections.classList.toggle("active");
 
-    // header animation
-    let tl1 = gsap.timeline()
+    // collecctions item animation
+    // let tl1 = gsap.timeline()
+    // tl1.from('.collections-item-container',
+    //     {x:1200, duration: 1,}
+    // );
 
-    tl1.from('.collections-item-container',
-        {x:1200, duration: 1,}
-    );
+
 })
 
 burgerClose.addEventListener("click", () => {

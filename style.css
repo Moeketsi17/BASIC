@@ -1176,8 +1176,8 @@ figure svg {
         top: 0;
         left: 0;
         background-color: #252422;
-        z-index: 1;
-        display: none;
+        z-index: 100000;
+        display: flex;
         transition: display 0.3s ease-in;
         padding: 0;
     }
