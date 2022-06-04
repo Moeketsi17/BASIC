@@ -66,11 +66,15 @@ menu.addEventListener("click", () => {
 let burger = document.querySelector(".burger");
 let collections = document.querySelector(".collecctions");
 let burgerClose = document.querySelector(".burger-close");
-
+let navBar = document.querySelector(".nav-bar")
+let burgerContainer = document.querySelector(".burger-container")
 
 // toggle collecctions burger ...
 burger.addEventListener("click", () => {
     collections.classList.toggle("active");
+    navBar.classList.toggle("hide");
+    burgerContainer.classList.toggle("circle");
+    burger.classList.toggle("circle");
 
     // collecctions item animation
     let tl1 = gsap.timeline()
@@ -81,9 +85,9 @@ burger.addEventListener("click", () => {
 
 })
 
-burgerClose.addEventListener("click", () => {
-    collections.classList.toggle("close");
-})
+// burgerClose.addEventListener("click", () => {
+//     collections.classList.toggle("close");
+// })
 
 
 

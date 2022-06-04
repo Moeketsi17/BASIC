@@ -126,7 +126,7 @@ html {
     width: 100%;
     height: 15vh;
     border-bottom: 1px solid #f9cdcd;
-    
+
 }
 
 .navlinks-logo {
@@ -215,7 +215,7 @@ html {
 .collections-item-container {
     padding: 1rem 0;
     width: 100%;
-    
+
 }
 
 .initiatives-container {
@@ -1123,6 +1123,7 @@ figure svg {
         position: relative;
         padding: 0 0 10px;
         background-color: transparent;
+        transition: opacity 0.1s ease-in-out;
     }
 
     .links-container {
@@ -1132,7 +1133,7 @@ figure svg {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        
+
     }
 
     .nav-links li a {
@@ -1152,6 +1153,53 @@ figure svg {
     }
 
 
+
+    /* hide some nav items when burger is clicke */
+    .nav-bar.hide>.logo,
+    .nav-bar.hide>.nav-links {
+        opacity: 0;
+    }
+
+    .burger-container.circle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .burger.circle {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #f9cdcd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger.circle span:nth-child(1) {
+        height: 3px;
+        width: 30px;
+        background-color: #f9cdcd;
+        transform: rotate(-45deg) translateX(-0px) translateY(-0px);
+        transition: all 0.4s ease;
+        position: absolute;
+        border-radius: 0;
+    }
+
+    .burger.circle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.circle span:nth-child(3) {
+        height: 3px;
+        width: 30px;
+        background-color: #f9cdcd;
+        transform: rotate(45deg) translateX(-0px) translateY(-0px);
+        transition: all 0.4s ease;
+        position: absolute;
+        border-radius: 0;
+    }
 
 
 
@@ -1183,16 +1231,13 @@ figure svg {
         transform: translateX(0);
     }
 
+
     .collecctions.active {
         opacity: 1;
-        z-index: 10000;
+        z-index: 1000;
         display: flex;
     }
 
-    .collecctions.close {
-        z-index: 1;
-        display: none;
-    }
 
     .navlinks-nav {
         display: none;
@@ -1200,8 +1245,9 @@ figure svg {
 
     .collections-header {
         display: flex;
+        width: 100%;
         justify-content: space-between;
-        padding: 3rem 5%;
+        padding: 2.5rem 5%;
         align-items: center;
     }
 
@@ -1234,29 +1280,10 @@ figure svg {
     }
 
     .burger-close {
-        height: 45px;
-        width: 45px;
-        border: 2px solid #f9cdcd;
-        border-radius: 50%;
-        cursor: pointer;
+        opacity: 0;
     }
 
-    .burger-close-line {
-        height: 2.45px;
-        width: 25px;
-        background-color: #f9cdcd;
-
-    }
-
-    .burger-close-line1 {
-        transform: rotate(45deg) translateX(19px) translateY(7px);
-        transition: all 0.4s ease;
-    }
-
-    .burger-close-line2 {
-        transform: rotate(-45deg) translateX(-6px) translateY(17px);
-        transition: all 0.4s ease;
-    }
+    
 
     .collections-item-container {
         padding: 0 5%;
