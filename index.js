@@ -18,6 +18,16 @@ const scroll = new LocomotiveScroll({
     smartphone: { smooth: true },
 })
 
+scroll.on("scroll", () => {
+    if (scroll.y > 100) {
+        // 
+    } else {
+        // 
+    }
+    
+})
+
+console.log(e.scroll.y)
 // let st = ScrollTrigger.create({
 //         trigger: ".about-work",
 //         pin: ".about-work-text-container",
@@ -82,8 +92,6 @@ burger.addEventListener("click", () => {
     tl1.from('.collections-item-container',
         {x:1200, duration: 1,}
     );
-
-
 })
 
 
