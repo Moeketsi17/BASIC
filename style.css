@@ -26,7 +26,7 @@ html {
     left: 0;
     width: 100%;
     height: 15vh;
-    /* z-index: 1000; */
+    z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
 
@@ -880,7 +880,7 @@ figure svg {
 }
 
 .footer-logo {
-    color: #f4f4f4;
+    color: #f9cdcd;
     font-weight: 700;
     font-size: 18px;
 }
@@ -896,7 +896,7 @@ figure svg {
     font-size: 20px;
     line-height: 22px;
     font-weight: 600;
-    color: #f4f4f4;
+    color: #f9cdcd;
 }
 
 
@@ -914,7 +914,7 @@ figure svg {
 .footer-heading {
     font-size: 16px;
     line-height: 19px;
-    color: #f4f4f4;
+    color: #f9cdcd;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -924,7 +924,7 @@ figure svg {
     height: 2.5rem;
     width: 100%;
     justify-content: space-between;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f9cdcd;
 }
 
 .email-section input {
@@ -933,11 +933,11 @@ figure svg {
     height: 3rem;
     border: none;
     outline: none;
-    color: #f4f4f4;
+    color: #f9cdcd;
 }
 
 .email-section input::placeholder {
-    color: #f4f4f4;
+    color: #f9cdcd;
 }
 
 .email-section button {
@@ -949,7 +949,7 @@ figure svg {
 .email-section button svg {
     width: 20px;
     height: 17px;
-    color: #f4f4f4;
+    color: #f9cdcd;
 }
 
 .ul-links-container {
@@ -966,7 +966,7 @@ figure svg {
 }
 
 .footer-links span {
-    color: #f4f4f4;
+    color: #f9cdcd;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -1504,7 +1504,7 @@ figure svg {
         margin-top: 2rem;
         border: 1px solid #252422;
         height: 30px;
-        width: 170px;
+        width: 140px;
         border-radius: 15px;
         cursor: pointer;
         background-color: #f4f4f4;
@@ -1525,16 +1525,12 @@ figure svg {
         background-color: #252422;
         z-index: 1;
         transition: 0.8s;
-
+        color: #f4f4f4;
     }
 
     .cta-btn:hover::before {
         color: #f4f4f4;
         height: 180%;
-    }
-
-    .cta-btn p {
-        color: #252422;
     }
 
     .cta-btn:hover .cta-btn p {
@@ -1951,7 +1947,7 @@ figure svg {
     }
 
     .footer-logo {
-        color: #f4f4f4;
+        color: #f9cdcd;
         font-weight: 700;
         font-size: 25px;
     }
@@ -1967,7 +1963,7 @@ figure svg {
         font-size: 32px;
         line-height: 33px;
         font-weight: 600;
-        color: #f4f4f4;
+        color: #f9cdcd;
     }
 
 
@@ -1985,7 +1981,7 @@ figure svg {
     .footer-heading {
         font-size: 18px;
         line-height: 19px;
-        color: #f4f4f4;
+        color: #f9cdcd;
         font-weight: 500;
         margin-bottom: 1rem;
     }
@@ -1995,7 +1991,7 @@ figure svg {
         height: 2.5rem;
         width: 100%;
         justify-content: space-between;
-        border-bottom: 1px solid #f4f4f4;
+        border-bottom: 1px solid #f9cdcd;
     }
 
     .email-section input {
@@ -2003,11 +1999,11 @@ figure svg {
         font-size: 18px;
         border: none;
         outline: none;
-        color: #f4f4f4;
+        color: #f9cdcd;
     }
 
     .email-section input::placeholder {
-        color: #f4f4f4;
+        color: #f9cdcd;
     }
 
     .email-section button {
@@ -2019,7 +2015,7 @@ figure svg {
     .email-section button svg {
         width: 20px;
         height: 17px;
-        color: #f4f4f4;
+        color: #f9cdcd;
     }
 
     .ul-links-container {
@@ -2036,7 +2032,7 @@ figure svg {
     }
 
     .footer-links span {
-        color: #f4f4f4;
+        color: #f9cdcd;
         font-size: 18px;
         line-height: 22px;
         font-weight: 400;
