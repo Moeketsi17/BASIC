@@ -865,11 +865,12 @@ figure svg {
 /* footer section */
 .footer {
     width: 100%;
-    padding: 1rem 5% 2rem;
+    padding: 1rem 5% 0rem;
     background-color: #252422;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer-about {
@@ -973,13 +974,20 @@ figure svg {
     cursor: pointer;
 }
 
+.footer-copyright-container {
+    background-color: #141414d0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 
 .footer-copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 0rem;
+    padding: 1rem 0 1rem;
+    
 }
 
 .footer-copyright p {
