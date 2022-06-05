@@ -22,16 +22,16 @@ let scrollWindow = document.querySelector("c-scrollbar");
 // });
 
 
-scroll.on("scroll", () => {
-    if (body.scroll.y < 0) {
-        // 
-    } else {
-        // 
-    }
+// scroll.on("scroll", () => {
+//     if (body.scroll.y < 0) {
+//         // 
+//     } else {
+//         // 
+//     }
 
-})
+// })
 
-console.log(body.scroll.y)
+// console.log(body.scroll.y)
 
 
 // let st = ScrollTrigger.create({
@@ -55,12 +55,16 @@ console.log(body.scroll.y)
 let menu = document.querySelector(".menu-btn");
 let navLinks = document.querySelector(".nav-links");
 let initiatives = document.querySelector(".initiatives");
+let navLinksBurger = document.querySelector(".navlinks-burger")
 
-menu.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+// menu.addEventListener("click", () => {
+//     if (menu === ("click")) {
+//         navLinks.classList.toggle("show");
+//     } else if(navLinksBurger === ("click"))  {
+//         navLinks.classList.remove("show")
+//     }
 
-});
-
+// });
 
 
 
