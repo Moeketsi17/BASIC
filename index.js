@@ -57,6 +57,7 @@ let navLinks = document.querySelector(".nav-links");
 let initiatives = document.querySelector(".initiatives");
 let navLinksBurger = document.querySelector(".navlinks-burger")
 
+
 // menu.addEventListener("click", () => {
 //     if (menu === ("click")) {
 //         navLinks.classList.toggle("show");
