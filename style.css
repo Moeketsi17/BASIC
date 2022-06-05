@@ -82,7 +82,7 @@ html {
     left: 0;
     background-color: #252422;
     padding: 0 5% 0;
-    z-index: 2000;
+    z-index: 900;
     transition: all 1s ease-in;
 }
 
@@ -97,14 +97,16 @@ html {
     list-style: none;
     height: 80%;
     padding: 2.5rem 0 0;
+    
 }
 
 .nav-links li a,
 .nav-links li {
     text-decoration: none;
     color: #f9cdcd;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+    line-height: 40px;
 }
 
 .nav-links .initiatives  {
