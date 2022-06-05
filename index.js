@@ -2,8 +2,12 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
-    tablet: { smooth: true },
-    smartphone: { smooth: true },
+    tablet: {
+        smooth: true
+    },
+    smartphone: {
+        smooth: true
+    },
 })
 
 
@@ -24,7 +28,7 @@ scroll.on("scroll", () => {
     } else {
         // 
     }
-    
+
 })
 
 console.log(body.scroll.y)
@@ -62,6 +66,9 @@ menu.addEventListener("click", () => {
 
 
 
+
+
+
 // toggle collecctions burger desktop...
 let burger = document.querySelector(".burger");
 let collections = document.querySelector(".collecctions");
@@ -77,9 +84,10 @@ burger.addEventListener("click", () => {
 
     // collecctions item animation
     let tl1 = gsap.timeline()
-    tl1.from('.collections-item-container',
-        {x:1200, duration: 1,}
-    );
+    tl1.from('.collections-item-container', {
+        x: 1200,
+        duration: 1,
+    });
 })
 
 
@@ -116,18 +124,13 @@ slider.addEventListener('mouseup', () => {
 });
 
 slider.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
+    if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
     const walk = (x - startX) * 3; //scroll-fast
     slider.scrollLeft = scrollLeft - walk;
     console.log(walk);
 });
-
-
-
-
-
 
 
 
