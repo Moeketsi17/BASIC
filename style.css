@@ -1140,7 +1140,7 @@ figure svg {
         display: flex;
         align-items: center;
         flex-direction: row;
-        max-width: 600px;
+        max-width: 700px;
         list-style: none;
         justify-content: space-between;
         height: 27px;
@@ -1157,7 +1157,7 @@ figure svg {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-
+        background-color: #252422;
     }
 
     .nav-links li a {
@@ -1165,6 +1165,15 @@ figure svg {
         color: #fff;
         font-size: 14px;
         font-weight: 500;
+    }
+
+    links-container li::after {
+        content: "";
+        position: absolute;
+        background-color: #aa0202;
+        width: 100%;
+        left: 0;
+        bottom: -10px;
     }
 
     .nav-links li:nth-child(8) {
