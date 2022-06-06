@@ -62,9 +62,9 @@ menu.addEventListener("click", () => {
     navLinks.classList.toggle("show");
 });
 
-initiatives.addEventListener("click", () => {
-    collections.classList.toggle("active");
-})
+// initiatives.addEventListener("click", () => {
+//     collections.classList.toggle("active");
+// })
 
 navLinksBurger.addEventListener("click", () => {
     navLinks.classList.remove("show")
