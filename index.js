@@ -58,15 +58,17 @@ let initiatives = document.querySelector(".initiatives");
 let navLinksBurger = document.querySelector(".navlinks-burger")
 
 
-// menu.addEventListener("click", () => {
-//     if (menu === ("click")) {
-//         navLinks.classList.toggle("show");
-//     } else if(navLinksBurger === ("click"))  {
-//         navLinks.classList.remove("show")
-//     }
+menu.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
 
-// });
+initiatives.addEventListener("click", () => {
+    collections.classList.toggle("active");
+})
 
+navLinksBurger.addEventListener("click", () => {
+    navLinks.classList.remove("show")
+})
 
 
 
