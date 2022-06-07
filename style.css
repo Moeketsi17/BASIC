@@ -22,7 +22,6 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-    /* mix-blend-mode: difference; */
     position: fixed;
     top: 0;
     left: 0;
@@ -39,12 +38,10 @@ html {
     background-color: #f4f4f4;
 }
 
-.nav-bar.change > .logo,
-    .nav-bar.change > .menu-btn {
-        color: #252422;
-    }
-
-
+.nav-bar.change>.logo,
+.nav-bar.change>.menu-btn {
+    color: #252422;
+}
 
 
 .logo {
@@ -228,7 +225,12 @@ html {
     padding: 1rem 0;
     width: 100%;
     height: 85vh;
-    
+    overflow: scroll;
+    position: relative;
+}
+
+.collections-item-container::-webkit-scrollbar {
+    display: none;
 }
 
 .initiatives-container {
@@ -243,7 +245,7 @@ html {
     min-width: 100%;
     height: 520px;
     border-bottom: 1px solid #f9cdcd;
-    padding: 0 10px;
+    padding: 0 0;
 }
 
 .collection-item-img {
@@ -312,10 +314,17 @@ html {
     font-weight: 600;
 }
 
+.collections-footer{
+    width: 100%;
+    padding: 0rem 5% 0rem;
+    display: flex;
+    align-items: center;
+}
 
-
-.collections-footer {
-    padding: 1rem 5% 1rem;
+.footer-copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -833,7 +842,7 @@ header video {
     transition: text-decoration 1s ease;
     padding: 1.5rem 0 0rem;
     height: 9rem;
-    
+
 }
 
 .feature-about-text p {
@@ -1084,8 +1093,8 @@ figure svg {
         background-color: #f4f4f4;
     }
 
-    .nav-bar.change > .logo,
-    .nav-bar.change > .nav-links li a {
+    .nav-bar.change>.logo,
+    .nav-bar.change>.nav-links li a {
         color: #252422;
     }
 
