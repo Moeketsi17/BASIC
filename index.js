@@ -20,6 +20,10 @@ scroll.on("scroll", (instance) => {
         // return;
     }
 
+    if (instance.scroll.y > 900) {
+        navBar.classList.toggle("change");
+    }
+
     if (instance.scroll.y > lastScroll && !scrollContainer.classList.contains("scroll-down")) {
         scrollContainer.classList.remove("scroll-up");
         scrollContainer.classList.add("scroll-down");
@@ -30,7 +34,6 @@ scroll.on("scroll", (instance) => {
         scrollContainer.classList.add("scroll-up");
     }
     lastScroll = instance.scroll.y;
-    console.log(instance.scroll.y);
 });
 
 
@@ -79,7 +82,7 @@ let burgerContainer = document.querySelector(".burger-container")
 
 burger.addEventListener("click", () => {
     collections.classList.toggle("active");
-    navBar.classList.toggle("hide");
+    // navBar.classList.toggle("hide");
     burgerContainer.classList.toggle("circle");
     burger.classList.toggle("circle");
 

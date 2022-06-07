@@ -1058,7 +1058,10 @@ figure svg {
         border-radius: 3px;
     } */
 
-    
+    .scroll-down .nav-bar {
+        transform: translate3d(0, -100%, 0);
+    }
+
 
 
     .nav-bar {
