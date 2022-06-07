@@ -97,6 +97,7 @@ burger.addEventListener("click", () => {
     burgerContainer.classList.toggle("circle");
     burger.classList.toggle("circle");
 
+
     // collecctions item animation
     let tl1 = gsap.timeline()
     tl1.from('.collections-item-container', {
