@@ -32,20 +32,20 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-.nav-bar.sticky {
+.nav-bar.change {
+    height: 10vh;
     padding: 0px 5%;
     color: #252422;
     background-color: #f4f4f4;
 }
 
-.nav-bar.sticky .logo,
-.nav-bar.sticky .nav-links li a {
-    color: #252422;
-}
+.nav-bar.change > .logo,
+    .nav-bar.change > .menu-btn {
+        color: #252422;
+    }
 
-.nav-bar.sticky .burger span {
-    background-color: #252422;
-}
+
+
 
 .logo {
     font-size: 22px;
