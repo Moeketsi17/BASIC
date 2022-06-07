@@ -8,8 +8,28 @@ const scroll = new LocomotiveScroll({
     smartphone: {
         smooth: true
     },
-})
+});
 
+let scrollContainer = document.querySelector(".scroll-container");
+let lastScroll = 0;
+
+scroll.on("scroll", (instance) => {
+    if (instance.scroll.y <= 0) {
+        scrollContainer.classList.remove("scroll-up");
+        // return;
+    }
+
+    if (instance.scroll.y > lastScroll && !scrollContainer.classList.contains("scroll-down")) {
+        scrollContainer.classList.remove("scroll-up");
+        scrollContainer.classList.add("scroll-down");
+    }
+    
+    else if (instance.scroll.y < lastScroll && scrollContainer.classList.contains("scroll-down")) {
+        scrollContainer.classList.remove("scroll-down");
+        scrollContainer.classList.add("scroll-up");
+    }
+    lastScroll = instance.scroll.y;
+});
 
 
 
