@@ -57,19 +57,26 @@ let menu = document.querySelector(".menu-btn");
 let navLinks = document.querySelector(".nav-links");
 let initiatives = document.querySelector(".initiatives");
 let navLinksBurger = document.querySelector(".navlinks-burger")
+let closeCollection = document.querySelector(".close-collection")
 
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("show");
 });
 
-// initiatives.addEventListener("click", () => {
-//     collections.classList.toggle("active");
-// })
-
 navLinksBurger.addEventListener("click", () => {
     navLinks.classList.remove("show")
 })
+
+initiatives.addEventListener("click", () => {
+    collections.classList.toggle("active");
+})
+
+closeCollection.addEventListener("click", () => {
+    collections.classList.remove("active");
+})
+
+
 
 
 
@@ -86,7 +93,7 @@ let burgerContainer = document.querySelector(".burger-container")
 
 burger.addEventListener("click", () => {
     collections.classList.toggle("active");
-    // navBar.classList.toggle("hide");
+    navBar.classList.toggle("hide");
     burgerContainer.classList.toggle("circle");
     burger.classList.toggle("circle");
 
