@@ -1069,7 +1069,6 @@ figure svg {
         align-items: center;
         justify-content: space-between;
         padding: 20px 5%;
-        /* mix-blend-mode: difference; */
         position: fixed;
         top: 0;
         left: 0;
@@ -1079,18 +1078,18 @@ figure svg {
         transition: all 0.3s ease-in-out;
     }
 
-    .nav-bar.sticky {
+    .nav-bar.change {
         padding: 20px 5%;
         color: #252422;
         background-color: #f4f4f4;
     }
 
-    .nav-bar.sticky .logo,
-    .nav-bar.sticky .nav-links li a {
+    .nav-bar.change > .logo,
+    .nav-bar.change > .nav-links li a {
         color: #252422;
     }
 
-    .nav-bar.sticky .burger span {
+    .nav-bar.change .burger span {
         background-color: #252422;
     }
 

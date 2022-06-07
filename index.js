@@ -15,13 +15,8 @@ let lastScroll = 0;
 
 scroll.on("scroll", (instance) => {
     if (instance.scroll.y <= 0) {
-        
         scrollContainer.classList.remove("scroll-up");
-        // return;
-    }
-
-    if (instance.scroll.y > 900) {
-        navBar.classList.toggle("change");
+        return;
     }
 
     if (instance.scroll.y > lastScroll && !scrollContainer.classList.contains("scroll-down")) {
@@ -33,6 +28,15 @@ scroll.on("scroll", (instance) => {
         scrollContainer.classList.remove("scroll-down");
         scrollContainer.classList.add("scroll-up");
     }
+
+    
+    if (instance.scroll.y < 600) {
+        navBar.classList.remove("change");
+    }
+    else if (instance.scroll.y > 600) {
+        navBar.classList.add("change");
+    }
+
     lastScroll = instance.scroll.y;
 });
 
