@@ -12,36 +12,8 @@ const scroll = new LocomotiveScroll({
 
 
 
-// sticky nav on scroll-up
-const body = document.body;
-let lastScroll = 0;
-let scrollWindow = document.querySelector("c-scrollbar");
-
-// body.addEventListener('scroll', () => {
-//     console.log(scrollWindow);
-// });
 
 
-// scroll.on("scroll", () => {
-//     if (body.scroll.y < 0) {
-//         // 
-//     } else {
-//         // 
-//     }
-
-// })
-
-// console.log(body.scroll.y)
-
-
-// let st = ScrollTrigger.create({
-//         trigger: ".about-work",
-//         pin: ".about-work-text-container",
-//         start: "top center",
-//         end: "top bottom"
-//     });
-
-// console.log(st.pin);
 
 
 

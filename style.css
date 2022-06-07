@@ -126,7 +126,6 @@ html {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    
 }
 
 .navlinks-footer p {
@@ -1652,7 +1651,8 @@ figure svg {
 
     .work-img-text {
         padding: 1.5rem;
-        width: 65%;
+        width: 100%;
+        padding-right: 35%;
     }
 
     .work-heading {
