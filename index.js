@@ -10,11 +10,12 @@ const scroll = new LocomotiveScroll({
     },
 });
 
-let scrollContainer = document.querySelector(".scroll-container");
+let scrollContainer = document.querySelector("body");
 let lastScroll = 0;
 
 scroll.on("scroll", (instance) => {
     if (instance.scroll.y <= 0) {
+        
         scrollContainer.classList.remove("scroll-up");
         // return;
     }
@@ -29,6 +30,7 @@ scroll.on("scroll", (instance) => {
         scrollContainer.classList.add("scroll-up");
     }
     lastScroll = instance.scroll.y;
+    console.log(instance.scroll.y);
 });
 
 
