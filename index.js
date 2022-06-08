@@ -117,7 +117,7 @@ burger.addEventListener("click", () => {
 
 
 // work mouse grab scroll
-let slider = document.querySelector('.featured-company-container, .initiatives-container ');
+let slider = document.querySelector('.featured-company-container', '.initiatives-container ');
 let isDown = false;
 let startX;
 let scrollLeft;

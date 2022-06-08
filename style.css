@@ -1178,13 +1178,15 @@ figure svg {
         font-weight: 500;
     }
 
-    links-container li::after {
+    /* .nav-links li::after {
         content: "";
-        position: absolute;
+        position: relative;
         width: 100%;
         left: 0;
         bottom: -10px;
-    }
+        color: aqua;
+        background-color: yellow;
+    } */
 
     .nav-links li:nth-child(8) {
         display: none;
@@ -1329,13 +1331,12 @@ figure svg {
         opacity: 0;
     }
 
-
-
     .collections-item-container {
         padding: 0 5%;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow-x: scroll;
     }
 
     .initiatives-container {
