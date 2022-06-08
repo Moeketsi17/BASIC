@@ -151,3 +151,19 @@ slider.addEventListener('mousemove', (e) => {
 
 
 
+
+
+
+// pin about text
+
+
+
+
+
+
+
+
+
+
+
+
