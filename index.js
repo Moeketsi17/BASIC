@@ -68,15 +68,19 @@ menu.addEventListener("click", () => {
 
 navLinksBurger.addEventListener("click", () => {
     navLinks.classList.remove("show")
-})
+});
 
 initiatives.addEventListener("click", () => {
     collections.classList.toggle("active");
-})
+});
 
 closeCollection.addEventListener("click", () => {
     collections.classList.remove("active");
-})
+});
+
+
+
+
 
 
 
@@ -159,7 +163,6 @@ slider.addEventListener('mousemove', (e) => {
 // pin about text
 // let about = document.querySelector(".about-section");
 // let textWidth = document.querySelector(".about-text-container").clientWidth;
-// scroll.on("scroll", ScrollTrigger.update);
 
 // scroll.on("scroll", (about) => {
 //     if (textWidth < 400) {
