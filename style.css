@@ -2033,6 +2033,10 @@ figure svg {
         max-width: 40%;
     }
 
+    .footer-email button {
+        cursor: pointer;
+    }
+
     .footer-heading {
         font-size: 18px;
         line-height: 19px;
