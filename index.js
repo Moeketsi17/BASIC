@@ -42,13 +42,11 @@ scroll.on("scroll", (instance) => {
 
 
 let mouseCursor = document.querySelector(".cursor-container")
-scroll.on("mousemove", cursor)
-function cursor(e) {
+window.addEventListener("mousemove", cursor)
+function cursor(e){
     mouseCursor.style.top = e.pageY + "px";
     mouseCursor.style.left = e.pageX + "px";
 }
-
-console.log(cursor(e))
 
 
 
