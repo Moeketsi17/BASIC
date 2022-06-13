@@ -41,12 +41,23 @@ scroll.on("scroll", (instance) => {
 });
 
 
-let mouseCursor = document.querySelector(".cursor-container")
-window.addEventListener("mousemove", cursor)
-function cursor(e){
-    mouseCursor.style.top = e.pageY + "px";
-    mouseCursor.style.left = e.pageX + "px";
-}
+let mouseCursor = document.querySelector(".cursor-container");
+let cusorContainer = document.querySelector(".header-cursor-container");
+const header = document.querySelector("header");
+
+
+
+header.addEventListener("mousemove", () => {
+    if ("mousemove" !== cusorContainer) {
+        mouseCursor.classList.add("off")
+    } else if ("mousemove" == cusorContainer) {
+        cusorContainer.addEventListener("mousemove", cursor)
+        function cursor(e){
+        mouseCursor.style.top = e.pageY + "px";
+        mouseCursor.style.left = e.pageX + "px";
+        }
+    }
+})
 
 
 
