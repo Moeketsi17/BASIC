@@ -49,18 +49,8 @@ function cursor(e) {
     mouseCursor.style.left = e.pageX + "px";
 }
 
-// header.addEventListener("mousemove", () => {
-//     if ("mousemove" !== cusorContainer) {
-//         mouseCursor.classList.add("off")
-//     } else if ("mousemove" == cusorContainer) {
-//         cusorContainer.addEventListener("mousemove", cursor)
 
-//         function cursor(e) {
-//             mouseCursor.style.top = e.pageY + "px";
-//             mouseCursor.style.left = e.pageX + "px";
-//         }
-//     }
-// })
+
 
 
 

@@ -1506,8 +1506,9 @@ figure svg {
     .cursor-container {
         transition: all 0.3s ease;
         position: absolute;
-        transform: translate(-100%, -100%);
-        transition: all 0.4s ease;
+
+        transform: translate(-50%, -200px);
+        transition: all 0.25s ease;
         transform-origin: 100% 100%;
     }
 
