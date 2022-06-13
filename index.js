@@ -22,18 +22,15 @@ scroll.on("scroll", (instance) => {
     if (instance.scroll.y > lastScroll && !scrollContainer.classList.contains("scroll-down")) {
         scrollContainer.classList.remove("scroll-up");
         scrollContainer.classList.add("scroll-down");
-    }
-    
-    else if (instance.scroll.y < lastScroll && scrollContainer.classList.contains("scroll-down")) {
+    } else if (instance.scroll.y < lastScroll && scrollContainer.classList.contains("scroll-down")) {
         scrollContainer.classList.remove("scroll-down");
         scrollContainer.classList.add("scroll-up");
     }
 
-    
+
     if (instance.scroll.y < 600) {
         navBar.classList.remove("change");
-    }
-    else if (instance.scroll.y > 600) {
+    } else if (instance.scroll.y > 600) {
         navBar.classList.add("change");
     }
 
@@ -45,19 +42,25 @@ let mouseCursor = document.querySelector(".cursor-container");
 let cusorContainer = document.querySelector(".header-cursor-container");
 const header = document.querySelector("header");
 
+cusorContainer.addEventListener("mousemove", cursor)
 
+function cursor(e) {
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
+}
 
-header.addEventListener("mousemove", () => {
-    if ("mousemove" !== cusorContainer) {
-        mouseCursor.classList.add("off")
-    } else if ("mousemove" == cusorContainer) {
-        cusorContainer.addEventListener("mousemove", cursor)
-        function cursor(e){
-        mouseCursor.style.top = e.pageY + "px";
-        mouseCursor.style.left = e.pageX + "px";
-        }
-    }
-})
+// header.addEventListener("mousemove", () => {
+//     if ("mousemove" !== cusorContainer) {
+//         mouseCursor.classList.add("off")
+//     } else if ("mousemove" == cusorContainer) {
+//         cusorContainer.addEventListener("mousemove", cursor)
+
+//         function cursor(e) {
+//             mouseCursor.style.top = e.pageY + "px";
+//             mouseCursor.style.left = e.pageX + "px";
+//         }
+//     }
+// })
 
 
 
@@ -186,15 +189,7 @@ slider.addEventListener('mousemove', (e) => {
 //         start: "top top",
 //         end: "+=0"
 //         });
-        
+
 //     }
-    
+
 // })
-
-
-
-
-
-
-
-
