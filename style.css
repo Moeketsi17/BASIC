@@ -1507,11 +1507,16 @@ figure svg {
         /* transform: translate(-50%, -50%); */
         transition: all 0.3s ease;
         transform-origin: 100% 100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        transform-origin: 100% 100%;
     }
 
     .header-cursor {
-        height: 130px;
-        width: 130px;
+        height: 100px;
+        width: 100px;
         background-color: #fff;
         border-radius: 50%;
         display: flex;
