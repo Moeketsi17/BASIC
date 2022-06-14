@@ -1755,6 +1755,8 @@ figure svg {
         border-radius: 50%;
         background-color: #252422;
         color: #f9cdcd;
+        position: absolute;
+        text-align: center;
     }
 
     .featured-company-container::-webkit-scrollbar {
