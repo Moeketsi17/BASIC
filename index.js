@@ -38,9 +38,12 @@ scroll.on("scroll", (instance) => {
 });
 
 
+
+
+// custom cusor
 let mouseCursor = document.querySelector(".cursor-container");
 let cusorContainer = document.querySelector(".header-cursor-container");
-const header = document.querySelector("header");
+let featuredCusor = document.querySelector(".featured-cusor");
 
 cusorContainer.addEventListener("mousemove", cursor)
 

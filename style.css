@@ -1756,10 +1756,15 @@ figure svg {
         background-color: #f9cdcd;
         z-index: 10;
         position: absolute;
+        display: grid;
+        place-items: center;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        transform-origin: 100% 100%;
     }
 
     .featured-cusor p {
-        text-align: center;
         color: #252422;
         font-size: 20px;
     }
