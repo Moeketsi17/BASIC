@@ -1750,13 +1750,18 @@ figure svg {
     }
 
     .featured-cusor {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
-        background-color: #252422;
-        color: #f9cdcd;
+        background-color: #f9cdcd;
+        z-index: 10;
         position: absolute;
+    }
+
+    .featured-cusor p {
         text-align: center;
+        color: #252422;
+        font-size: 20px;
     }
 
     .featured-company-container::-webkit-scrollbar {
