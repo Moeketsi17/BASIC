@@ -43,14 +43,21 @@ scroll.on("scroll", (instance) => {
 // custom cusor
 let mouseCursor = document.querySelector(".cursor-container");
 let cusorContainer = document.querySelector(".header-cursor-container");
-let featuredCusor = document.querySelector(".featured-cusor");
 
 cusorContainer.addEventListener("mousemove", cursor)
-
 function cursor(e) {
     mouseCursor.style.top = e.pageY + "px";
     mouseCursor.style.left = e.pageX + "px";
 }
+
+// let featuredCusor = document.querySelector(".featured-cusor");
+// let featuredCompany = document.querySelector(".featured-company-container");
+
+// featuredCompany.addEventListener("mousemove", cursor)
+// function cursor(e) {
+//     mouseCursor.style.top = e.pageY + "px";
+//     mouseCursor.style.left = e.pageX + "px";
+// }
 
 
 
@@ -131,7 +138,7 @@ burger.addEventListener("click", () => {
 
 
 // work mouse grab scroll
-let slider = document.querySelector('.featured-company-container','.initiatives-container');
+let slider = document.querySelector('.featured-company-container');
 let slider2 = document.querySelector('.initiatives-container');
 let isDown = false;
 let startX;
