@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -1179,7 +1177,8 @@ figure svg {
         font-weight: 500;
     }
 
-    /* .nav-links li::after {
+
+    .nav-links li a::after {
         content: "";
         position: relative;
         width: 100%;
@@ -1187,7 +1186,7 @@ figure svg {
         bottom: -10px;
         color: aqua;
         background-color: yellow;
-    } */
+    }
 
     .nav-links li:nth-child(8) {
         display: none;
