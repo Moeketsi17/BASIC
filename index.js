@@ -50,13 +50,15 @@ function cursor(e) {
     mouseCursor.style.left = e.pageX + "px";
 }
 
+
+
 // let featuredCusor = document.querySelector(".featured-cusor");
 // let featuredCompany = document.querySelector(".featured-company-container");
 
 // featuredCompany.addEventListener("mousemove", cursor)
 // function cursor(e) {
-//     mouseCursor.style.top = e.pageY + "px";
-//     mouseCursor.style.left = e.pageX + "px";
+//     featuredCusor.style.top = e.pageY + "px";
+//     featuredCusor.style.left = e.pageX + "px";
 // }
 
 
