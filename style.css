@@ -1107,8 +1107,9 @@ figure svg {
     }
 
     .logo {
-        font-size: 34px;
+        font-size: 28px;
         color: #fff;
+        cursor: pointer;
     }
 
     .burger-container {
@@ -1151,7 +1152,7 @@ figure svg {
         display: flex;
         align-items: baseline;
         flex-direction: row;
-        max-width: 700px;
+        max-width: 850px;
         list-style: none;
         justify-content: space-between;
         height: 27px;
