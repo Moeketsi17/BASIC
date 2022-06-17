@@ -51,7 +51,6 @@ function cursor(e) {
 }
 
 
-
 // let featuredCusor = document.querySelector(".featured-cusor");
 // let featuredCompany = document.querySelector(".featured-cusor-container");
 
@@ -60,6 +59,7 @@ function cursor(e) {
 //     featuredCusor.style.top = e.pageY + "px";
 //     featuredCusor.style.left = e.pageX + "px";
 // }
+
 
 
 
