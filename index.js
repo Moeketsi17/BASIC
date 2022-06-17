@@ -53,7 +53,7 @@ function cursor(e) {
 
 
 // let featuredCusor = document.querySelector(".featured-cusor");
-// let featuredCompany = document.querySelector(".featured-company-container");
+// let featuredCompany = document.querySelector(".featured-cusor-container");
 
 // featuredCompany.addEventListener("mousemove", cursor)
 // function cursor(e) {

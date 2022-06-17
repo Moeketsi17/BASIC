@@ -1506,7 +1506,6 @@ figure svg {
     .cursor-container {
         transition: all 0.3s ease;
         position: absolute;
-
         transform: translate(-50%, -200px);
         transition: all 0.25s ease;
         transform-origin: 100% 100%;
@@ -1747,6 +1746,13 @@ figure svg {
         gap: 2rem;
         position: relative;
         height: 580px;
+    }
+
+    .featured-cusor-container {
+        position: relative;
+        height: 560px;
+        width: 100%;
+        background-color: rgb(2, 110, 110);
     }
 
     .featured-cusor {
