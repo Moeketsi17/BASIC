@@ -614,6 +614,11 @@ header video {
     background-color: #252422;
 }
 
+
+.featured-cusor-container {
+    display: none;
+}
+
 .featured-heading {
     padding: 3rem 0;
     font-size: 20px;
