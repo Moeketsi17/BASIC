@@ -978,6 +978,16 @@ figure svg {
     color: #f9cdcd;
 }
 
+.error {
+    display: flex;
+}
+
+.error p {
+    font-size: 14px;
+    color: rgb(221, 63, 63);
+    display: none;
+}
+
 .ul-links-container {
     display: flex;
     justify-content: space-between;
