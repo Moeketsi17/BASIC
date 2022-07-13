@@ -204,21 +204,3 @@ slider2.addEventListener('mousemove', (e) => {
 
 
 
-// pin about text
-// let about = document.querySelector(".about-section");
-// let textWidth = document.querySelector(".about-text-container").clientWidth;
-
-// scroll.on("scroll", (about) => {
-//     if (textWidth < 400) {
-//         return
-//     } else if (textWidth > 400) {
-//         let st = ScrollTrigger.create({
-//         trigger: ".about-section",
-//         pin: ".about-text-container",
-//         start: "top top",
-//         end: "+=0"
-//         });
-
-//     }
-
-// })
