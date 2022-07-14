@@ -960,6 +960,7 @@ figure svg {
     border: none;
     outline: none;
     color: #f9cdcd;
+    width: 90%;
 }
 
 .email-section input::placeholder {
