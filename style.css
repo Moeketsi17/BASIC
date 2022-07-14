@@ -983,9 +983,9 @@ figure svg {
 }
 
 .error p {
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(221, 63, 63);
-    /* display: none; */
+    display: none;
 }
 
 .ul-links-container {

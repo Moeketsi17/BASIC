@@ -202,7 +202,10 @@ slider2.addEventListener('mousemove', (e) => {
 
 
 // email validation
-const text = document.getElementById('error');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const text = document.getElementById('text-error');
+const btn = document.getElementById('button');
     
 let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
