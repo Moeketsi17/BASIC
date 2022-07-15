@@ -1763,11 +1763,11 @@ figure svg {
         height: 580px;
     }
 
-    .featured-cusor-container {
+    .collections-item-container {
+        display: flex;
         position: relative;
         height: 560px;
         width: 100%;
-        background-color: rgb(2, 110, 110);
     }
 
     .featured-cusor {
