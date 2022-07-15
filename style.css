@@ -1777,17 +1777,21 @@ figure svg {
         background-color: #f9cdcd;
         z-index: 10;
         position: absolute;
-        display: grid;
-        place-items: center;
-        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-90%, -100%);
         pointer-events: none;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
         transform-origin: 100% 100%;
     }
 
     .featured-cusor p {
         color: #252422;
         font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .featured-company-container::-webkit-scrollbar {
