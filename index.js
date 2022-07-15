@@ -41,24 +41,24 @@ scroll.on("scroll", (instance) => {
 
 
 // custom cusor
-let mouseCursor = document.querySelector(".cursor-container");
-let cusorContainer = document.querySelector(".header-cursor-container");
+// let mouseCursor = document.querySelector(".cursor-container");
+// let cusorContainer = document.querySelector(".header-cursor-container");
 
-cusorContainer.addEventListener("mousemove", cursor)
-function cursor(e) {
-    mouseCursor.style.top = e.pageY + "px";
-    mouseCursor.style.left = e.pageX + "px";
-}
-
-
-// let featuredCusor = document.querySelector(".featured-cusor");
-// let featuredCompany = document.querySelector(".featured-cusor-container");
-
-// featuredCompany.addEventListener("mousemove", cursor)
+// cusorContainer.addEventListener("mousemove", cursor)
 // function cursor(e) {
-//     featuredCusor.style.top = e.pageY + "px";
-//     featuredCusor.style.left = e.pageX + "px";
+//     mouseCursor.style.top = e.pageY + "px";
+//     mouseCursor.style.left = e.pageX + "px";
 // }
+
+
+let featuredCusor = document.querySelector(".featured-cusor");
+let featuredCompany = document.querySelector(".featured-cusor-container");
+
+featuredCompany.addEventListener("mousemove", cursor)
+function cursor(e) {
+    featuredCusor.style.top = e.pageY + "px";
+    featuredCusor.style.left = e.pageX + "px";
+}
 
 
 
