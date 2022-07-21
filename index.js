@@ -44,7 +44,7 @@ scroll.on("scroll", (instance) => {
 let headerCursor = document.querySelector(".cursor-container");
 let cusorContainer = document.querySelector(".header-cursor-container");
 
-cusorContainer.addEventListener("mousemove", cursor)
+cusorContainer.addEventListener("mousemove", cursor) 
 function cursor(e) {
     headerCursor.style.top = e.pageY + "px";
     headerCursor.style.left = e.pageX + "px";
