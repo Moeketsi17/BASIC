@@ -51,14 +51,14 @@ function cursor(e) {
 }
 
 
-// let featuredCusor = document.querySelector(".featured-cusor");
-// let featuredCompany = document.querySelector(".collections-item-container");
+let featuredCusor = document.querySelector(".featured-cusor");
+let featuredCompany = document.querySelector(".collections-item-container");
 
-// featuredCompany.addEventListener("mousemove", cursor)
-// function cursor(e) {
-//     featuredCusor.style.top = e.pageY + "px";
-//     featuredCusor.style.left = e.pageX + "px";
-// }
+featuredCompany.addEventListener("mousemove", cursor)
+function cursor(e) {
+    featuredCusor.style.top = e.pageY + "px";
+    featuredCusor.style.left = e.pageX + "px";
+}
 
 
 
