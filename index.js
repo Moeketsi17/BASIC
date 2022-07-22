@@ -50,6 +50,11 @@ function cursor(e) {
     headerCursor.style.left = e.pageX + "px";
 }
 
+let header = document.querySelector("header");
+header.addEventListener('click', () => {
+    
+})
+
 
 let featuredCusor = document.querySelector(".featured-cusor");
 let featuredCompany = document.querySelector(".collections-item-container");
@@ -59,6 +64,11 @@ let featuredCompany = document.querySelector(".collections-item-container");
 //     featuredCusor.style.top = e.pageY + "px";
 //     featuredCusor.style.left = e.pageX + "px";
 // }
+
+featuredCompany.addEventListener("mousemove", () => {
+    featuredCusor.style.top = e.pageY + "px";
+    featuredCusor.style.left = e.pageX + "px";
+})
 
 
 

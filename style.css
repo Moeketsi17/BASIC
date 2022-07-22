@@ -403,7 +403,27 @@ header video {
     font-size: 12px;
 }
 
+/* reel video */
+.reel {
+    width: 100%;
+    height: 100Vh;
+    position: none;
+    z-index: 1000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%,-50%); */
+    background: rgba(0, 0, 0, 1);
+}
 
+.reel video {
+    position: relative;
+    max-width: 900px;
+    max-height: 500px;
+    outline: none;
+}
 
 
 
