@@ -41,9 +41,16 @@ scroll.on("scroll", (instance) => {
 // play reel
 let header = document.querySelector("header");
 let reel = document.querySelector(".reel");
+let reelExit = document.querySelector(".reel-exit");
+
 header.addEventListener('click', () => {
-    reel.style.display = flex;
+    reel.classList.add("playReel")
+
+    reelExit.addEventListener("click", () => {
+        reel.classList.remove("playReel")
+    })
 })
+
 
 
 

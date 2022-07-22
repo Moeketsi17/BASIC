@@ -404,23 +404,60 @@ header video {
 }
 
 /* reel video */
+.reel-exit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #f9cdcd;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.reel-line1 {
+    height: 2px;
+    width: 15px;
+    background-color: #f9cdcd;
+    transform: rotate(-45deg) translateX(-0px) translateY(-0px);
+    transition: all 0.4s ease;
+    position: absolute;
+}
+
+.reel-line2 {
+    height: 2px;
+    width: 15px;
+    background-color: #f9cdcd;
+    transform: rotate(45deg) translateX(-0px) translateY(-0px);
+    transition: all 0.4s ease;
+    position: absolute;
+}
+
 .reel {
+    min-width: 320px;
     width: 100%;
     height: 100Vh;
-    position: none;
-    z-index: 1000000;
-    display: flex;
+    position: absolute;
+    z-index: 10000;
+    display: none;
     justify-content: center;
     align-items: center;
-    top: 0%;
-    left: 0%;
-    /* transform: translate(-50%,-50%); */
+    top: 0;
+    left: 0;
     background: rgba(0, 0, 0, 1);
 }
 
+.reel.playReel {
+    display: flex;
+}
+
 .reel video {
-    display: none;
+    /* display: none; */
     position: relative;
+    min-width: 100%;
+    min-height: 90%;
     max-width: 900px;
     max-height: 500px;
     outline: none;
@@ -1562,6 +1599,73 @@ figure svg {
         text-align: center;
         font-size: 16px;
     }
+    
+
+
+    /* reel video */
+    .reel-exit {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #f9cdcd;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .reel-line1 {
+        height: 2px;
+        width: 20px;
+        background-color: #f9cdcd;
+        transform: rotate(-45deg) translateX(-0px) translateY(-0px);
+        transition: all 0.4s ease;
+        position: absolute;
+    }
+
+    .reel-line2 {
+        height: 2px;
+        width: 20px;
+        background-color: #f9cdcd;
+        transform: rotate(45deg) translateX(-0px) translateY(-0px);
+        transition: all 0.4s ease;
+        position: absolute;
+    }
+
+    .reel {
+        min-width: 320px;
+        width: 100%;
+        height: 100Vh;
+        position: absolute;
+        z-index: 10000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 1);
+    }
+
+    .reel.playReel {
+        display: flex;
+    }
+
+    .reel video {
+        position: relative;
+        max-width: 900px;
+        max-height: 500px;
+        outline: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* about */
