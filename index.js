@@ -38,6 +38,13 @@ scroll.on("scroll", (instance) => {
 });
 
 
+// play reel
+let header = document.querySelector("header");
+let reel = document.querySelector(".reel");
+header.addEventListener('click', () => {
+    reel.style.display = flex;
+})
+
 
 
 // custom cusor
@@ -50,10 +57,6 @@ function cursor(e) {
     headerCursor.style.left = e.pageX + "px";
 }
 
-let header = document.querySelector("header");
-header.addEventListener('click', () => {
-    
-})
 
 
 let featuredCusor = document.querySelector(".featured-cusor");
