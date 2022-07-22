@@ -45,12 +45,11 @@ let reelExit = document.querySelector(".reel-exit");
 
 header.addEventListener('click', () => {
     reel.classList.add("playReel")
-
-    reelExit.addEventListener("click", () => {
-        reel.classList.remove("playReel")
-    })
 })
 
+reelExit.addEventListener("click", () => {
+    reel.classList.remove("playReel")
+})
 
 
 
