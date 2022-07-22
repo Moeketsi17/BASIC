@@ -1608,10 +1608,11 @@ figure svg {
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        border: 1px solid #f4f4f4;
+        border: 2px solid #f4f4f4;
         position: absolute;
         top: 2rem;
         right: 2rem;
+        cursor: pointer;
     }
 
     .reel-line1 {
