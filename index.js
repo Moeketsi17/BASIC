@@ -53,7 +53,7 @@ reelExit.addEventListener("click", () => {
 
 
 
-// custom cusor
+// custom cursor
 let headerCursor = document.querySelector(".cursor-container");
 let cusorContainer = document.querySelector(".header-cursor-container");
 

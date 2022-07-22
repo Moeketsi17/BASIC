@@ -411,16 +411,17 @@ header video {
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    border: 1px solid #f9cdcd;
+    border: 1px solid #f4f4f4;
     position: absolute;
     top: 2rem;
     right: 2rem;
+    z-index: 10001;
 }
 
 .reel-line1 {
     height: 2px;
     width: 15px;
-    background-color: #f9cdcd;
+    background-color: #f4f4f4;
     transform: rotate(-45deg) translateX(-0px) translateY(-0px);
     transition: all 0.4s ease;
     position: absolute;
@@ -429,7 +430,7 @@ header video {
 .reel-line2 {
     height: 2px;
     width: 15px;
-    background-color: #f9cdcd;
+    background-color: #f4f4f4;
     transform: rotate(45deg) translateX(-0px) translateY(-0px);
     transition: all 0.4s ease;
     position: absolute;
@@ -1607,7 +1608,7 @@ figure svg {
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        border: 1px solid #f9cdcd;
+        border: 1px solid #f4f4f4;
         position: absolute;
         top: 2rem;
         right: 2rem;
@@ -1616,7 +1617,7 @@ figure svg {
     .reel-line1 {
         height: 2px;
         width: 20px;
-        background-color: #f9cdcd;
+        background-color: #f4f4f4;
         transform: rotate(-45deg) translateX(-0px) translateY(-0px);
         transition: all 0.4s ease;
         position: absolute;
@@ -1625,7 +1626,7 @@ figure svg {
     .reel-line2 {
         height: 2px;
         width: 20px;
-        background-color: #f9cdcd;
+        background-color: #f4f4f4;
         transform: rotate(45deg) translateX(-0px) translateY(-0px);
         transition: all 0.4s ease;
         position: absolute;
@@ -1643,6 +1644,7 @@ figure svg {
         top: 0;
         left: 0;
         background: rgba(0, 0, 0, 1);
+        padding: 15% 8%;
     }
 
     .reel.playReel {
