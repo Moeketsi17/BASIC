@@ -53,37 +53,42 @@ reelExit.addEventListener("click", () => {
 
 
 
-// custom cursor
+// custom header cursor
 let headerCursor = document.querySelector(".cursor-container");
 let cusorContainer = document.querySelector(".header-cursor-container");
-
-cusorContainer.addEventListener("mousemove", cursor) 
-function cursor(e) {
-    headerCursor.style.top = e.pageY + "px";
-    headerCursor.style.left = e.pageX + "px";
-}
-
-
 
 let featuredCusor = document.querySelector(".featured-cusor");
 let featuredCompany = document.querySelector(".collections-item-container");
 
-// featuredCompany.addEventListener("mousemove", cursor)
-// function cursor(e) {
-//     featuredCusor.style.top = e.pageY + "px";
-//     featuredCusor.style.left = e.pageX + "px";
-// }
+let customCursor = document.querySelector(".custom-cursor");
+let companyContainer = document.querySelector(".featured-company-container");
 
-featuredCompany.addEventListener("mousemove", () => {
+cusorContainer.addEventListener("mousemove", cursor); 
+featuredCompany.addEventListener("mousemove", cursor);
+companyContainer.addEventListener("mousemove", cursor);
+
+function cursor(e) {
+    headerCursor.style.top = e.pageY + "px";
+    headerCursor.style.left = e.pageX + "px";
+
     featuredCusor.style.top = e.pageY + "px";
     featuredCusor.style.left = e.pageX + "px";
-})
+
+    customCursor.style.top = e.pageY + "px";
+    customCursor.style.left = e.pageX + "px";
+}
 
 
 
 
+// let customCursor = [...document.querySelectorAll(".custom-cusor")];
 
-
+// cusorContainer.addEventListener("mousemove", cursor) 
+// featuredCompany.addEventListener("mousemove", cursor)
+// function cursor(e) {
+//     custom-cusor.style.top = e.pageY + "px";
+//     headerCursor.style.left = e.pageX + "px";
+// }
 
 
 
