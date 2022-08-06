@@ -64,18 +64,18 @@ let customCursor = document.querySelector(".custom-cursor");
 let companyContainer = document.querySelector(".featured-company-container");
 
 cusorContainer.addEventListener("mousemove", cursor); 
-featuredCompany.addEventListener("mousemove", cursor);
-companyContainer.addEventListener("mousemove", cursor);
+// featuredCompany.addEventListener("mousemove", cursor);
+// companyContainer.addEventListener("mousemove", cursor);
 
 function cursor(e) {
     headerCursor.style.top = e.pageY + "px";
     headerCursor.style.left = e.pageX + "px";
 
-    featuredCusor.style.top = e.pageY + "px";
-    featuredCusor.style.left = e.pageX + "px";
+    // featuredCusor.style.top = e.pageY + "px";
+    // featuredCusor.style.left = e.pageX + "px";
 
-    customCursor.style.top = e.pageY + "px";
-    customCursor.style.left = e.pageX + "px";
+    // customCursor.style.top = e.pageY + "px";
+    // customCursor.style.left = e.pageX + "px";
 }
 
 
