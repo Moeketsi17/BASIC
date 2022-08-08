@@ -297,10 +297,9 @@ html {
     font-weight: 500;
 }
 
-
-
-
-
+.custom-cursor {
+    display: none;
+}
 
 .collection-text p:nth-child(2) {
     line-height: 17px;
